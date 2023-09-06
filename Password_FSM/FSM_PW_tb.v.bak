@@ -1,0 +1,51 @@
+module FSM_PW_tb();
+
+	reg 						clk;
+	reg						rst_a;
+	reg						enable_data;
+	reg [Bits - 1 : 0] 	entrada_pw;
+	
+	wire						pass;
+
+);
+
+
+FSM_PW DUT(
+.ck
+);
+
+
+always begin
+	forever #10 clk = ~clk;
+end
+
+
+initial
+begin
+	enable_data = 0;
+	clk = 0;
+	rst_a = 1;
+	#5 rst_a = 0;
+	#10 rst_a = 1;
+	
+	//
+	entrada_pw = 6;
+	enable_data = 1;
+	#10
+	enable_data = 0;
+	entrada_pw = 9;
+	enable_data = 1;
+	#10
+	enable_data = 0;
+	entrada_pw = 8;
+	enable_data = 1;
+	#10
+	enable_data = 0;
+	entrada_pw = 7;
+	enable_data = 1;
+	#10
+	$stop;
+end
+
+
+endmodule 

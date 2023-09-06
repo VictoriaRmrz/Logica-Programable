@@ -1,0 +1,39 @@
+|adder_display
+x => x.IN1
+y => y.IN1
+a << dec_display:U2.port2
+b << dec_display:U2.port3
+c << dec_display:U2.port4
+d << dec_display:U2.port5
+e << dec_display:U2.port6
+f << dec_display:U2.port7
+g << dec_display:U2.port8
+
+
+|adder_display|adder:U1
+a => s0.IN0
+a => s1.IN0
+b => s0.IN1
+b => s1.IN1
+s0 <= s0.DB_MAX_OUTPUT_PORT_TYPE
+s1 <= s1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder_display|dec_display:U2
+s0 => a.DATAIN
+s0 => d.DATAIN
+s0 => e.DATAIN
+s0 => f.IN0
+s0 => g.IN0
+s1 => g.IN1
+s1 => c.DATAIN
+s1 => f.IN1
+a <= s0.DB_MAX_OUTPUT_PORT_TYPE
+b <= <GND>
+c <= s1.DB_MAX_OUTPUT_PORT_TYPE
+d <= s0.DB_MAX_OUTPUT_PORT_TYPE
+e <= s0.DB_MAX_OUTPUT_PORT_TYPE
+f <= f.DB_MAX_OUTPUT_PORT_TYPE
+g <= g.DB_MAX_OUTPUT_PORT_TYPE
+
+

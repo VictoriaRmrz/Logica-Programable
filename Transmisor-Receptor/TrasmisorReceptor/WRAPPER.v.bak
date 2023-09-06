@@ -1,0 +1,13 @@
+module WRAPPER(
+	input [9:0] SW,
+	input [9:0] LEDR
+);
+
+TOP WRAPPER(
+   .i_Tx_DV(SW[9]),
+   .i_Tx_Byte(SW[7:0]),
+   .o_Tx_Done(LEDR[0]),
+	.o_Rx_DV(LEDR[1]),
+);
+
+endmodule

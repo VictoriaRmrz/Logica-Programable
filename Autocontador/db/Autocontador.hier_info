@@ -1,0 +1,185 @@
+|counter_9999
+clk => clk.IN3
+switch_up => switch_up.IN1
+switch_clear => switch_clear.IN1
+rst_a => rst_a.IN2
+seg[0] << disp_7seg:DISPLAY.seg
+seg[1] << disp_7seg:DISPLAY.seg
+seg[2] << disp_7seg:DISPLAY.seg
+seg[3] << disp_7seg:DISPLAY.seg
+seg[4] << disp_7seg:DISPLAY.seg
+seg[5] << disp_7seg:DISPLAY.seg
+seg[6] << disp_7seg:DISPLAY.seg
+seg[7] << disp_7seg:DISPLAY.seg
+digit[0] << disp_7seg:DISPLAY.digit
+digit[1] << disp_7seg:DISPLAY.digit
+digit[2] << disp_7seg:DISPLAY.digit
+digit[3] << disp_7seg:DISPLAY.digit
+
+
+|counter_9999|disp_7seg:DISPLAY
+clk => clk.IN1
+units[0] => ~NO_FANOUT~
+units[1] => ~NO_FANOUT~
+units[2] => ~NO_FANOUT~
+units[3] => ~NO_FANOUT~
+tens[0] => ~NO_FANOUT~
+tens[1] => ~NO_FANOUT~
+tens[2] => ~NO_FANOUT~
+tens[3] => ~NO_FANOUT~
+hund[0] => ~NO_FANOUT~
+hund[1] => ~NO_FANOUT~
+hund[2] => ~NO_FANOUT~
+hund[3] => ~NO_FANOUT~
+thous[0] => ~NO_FANOUT~
+thous[1] => ~NO_FANOUT~
+thous[2] => ~NO_FANOUT~
+thous[3] => ~NO_FANOUT~
+rst => ~NO_FANOUT~
+seg[0] <= decoder7seg:U1.seg
+seg[1] <= decoder7seg:U1.seg
+seg[2] <= decoder7seg:U1.seg
+seg[3] <= decoder7seg:U1.seg
+seg[4] <= decoder7seg:U1.seg
+seg[5] <= decoder7seg:U1.seg
+seg[6] <= decoder7seg:U1.seg
+seg[7] <= decoder7seg:U1.seg
+digit[0] <= digit[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+digit[1] <= digit[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+digit[2] <= digit[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+digit[3] <= digit[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|counter_9999|disp_7seg:DISPLAY|decoder7seg:U1
+clk => ~NO_FANOUT~
+count[0] => ~NO_FANOUT~
+count[1] => ~NO_FANOUT~
+count[2] => ~NO_FANOUT~
+count[3] => ~NO_FANOUT~
+rst => ~NO_FANOUT~
+seg[0] <= <GND>
+seg[1] <= <GND>
+seg[2] <= <GND>
+seg[3] <= <GND>
+seg[4] <= <GND>
+seg[5] <= <GND>
+seg[6] <= <GND>
+seg[7] <= <GND>
+
+
+|counter_9999|debouncer:D1
+p_b => p_b.IN1
+clk => clk.IN1
+rst_a => rst_a.IN2
+p_b_debouncer <= ff_d:REGISTRO_GUARDAR.q_out
+
+
+|counter_9999|debouncer:D1|counterDebouncer:CONTEO_DEBOUNCER
+clk => flag_check~reg0.CLK
+clk => counter_reg_aux[0].CLK
+clk => counter_reg_aux[1].CLK
+clk => counter_reg_aux[2].CLK
+clk => counter_reg_aux[3].CLK
+clk => counter_reg_aux[4].CLK
+clk => counter_reg_aux[5].CLK
+clk => counter_reg_aux[6].CLK
+clk => counter_reg_aux[7].CLK
+clk => counter_reg_aux[8].CLK
+clk => counter_reg_aux[9].CLK
+clk => counter_reg_aux[10].CLK
+clk => counter_reg_aux[11].CLK
+clk => counter_reg_aux[12].CLK
+clk => counter_reg_aux[13].CLK
+clk => counter_reg_aux[14].CLK
+clk => counter_reg_aux[15].CLK
+clk => counter_reg_aux[16].CLK
+clk => counter_reg_aux[17].CLK
+clk => counter_reg_aux[18].CLK
+rst_a => flag_check~reg0.ACLR
+rst_a => counter_reg_aux[0].ACLR
+rst_a => counter_reg_aux[1].ACLR
+rst_a => counter_reg_aux[2].ACLR
+rst_a => counter_reg_aux[3].ACLR
+rst_a => counter_reg_aux[4].ACLR
+rst_a => counter_reg_aux[5].ACLR
+rst_a => counter_reg_aux[6].ACLR
+rst_a => counter_reg_aux[7].ACLR
+rst_a => counter_reg_aux[8].ACLR
+rst_a => counter_reg_aux[9].ACLR
+rst_a => counter_reg_aux[10].ACLR
+rst_a => counter_reg_aux[11].ACLR
+rst_a => counter_reg_aux[12].ACLR
+rst_a => counter_reg_aux[13].ACLR
+rst_a => counter_reg_aux[14].ACLR
+rst_a => counter_reg_aux[15].ACLR
+rst_a => counter_reg_aux[16].ACLR
+rst_a => counter_reg_aux[17].ACLR
+rst_a => counter_reg_aux[18].ACLR
+flag_check <= flag_check~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|counter_9999|debouncer:D1|ff_d:REGISTRO_GUARDAR
+clk => q_out[0]~reg0.CLK
+rst_a => q_out[0]~reg0.ACLR
+d_in[0] => q_out[0]~reg0.DATAIN
+q_out[0] <= q_out[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|counter_9999|debouncer:D2
+p_b => p_b.IN1
+clk => clk.IN1
+rst_a => rst_a.IN2
+p_b_debouncer <= ff_d:REGISTRO_GUARDAR.q_out
+
+
+|counter_9999|debouncer:D2|counterDebouncer:CONTEO_DEBOUNCER
+clk => flag_check~reg0.CLK
+clk => counter_reg_aux[0].CLK
+clk => counter_reg_aux[1].CLK
+clk => counter_reg_aux[2].CLK
+clk => counter_reg_aux[3].CLK
+clk => counter_reg_aux[4].CLK
+clk => counter_reg_aux[5].CLK
+clk => counter_reg_aux[6].CLK
+clk => counter_reg_aux[7].CLK
+clk => counter_reg_aux[8].CLK
+clk => counter_reg_aux[9].CLK
+clk => counter_reg_aux[10].CLK
+clk => counter_reg_aux[11].CLK
+clk => counter_reg_aux[12].CLK
+clk => counter_reg_aux[13].CLK
+clk => counter_reg_aux[14].CLK
+clk => counter_reg_aux[15].CLK
+clk => counter_reg_aux[16].CLK
+clk => counter_reg_aux[17].CLK
+clk => counter_reg_aux[18].CLK
+rst_a => flag_check~reg0.ACLR
+rst_a => counter_reg_aux[0].ACLR
+rst_a => counter_reg_aux[1].ACLR
+rst_a => counter_reg_aux[2].ACLR
+rst_a => counter_reg_aux[3].ACLR
+rst_a => counter_reg_aux[4].ACLR
+rst_a => counter_reg_aux[5].ACLR
+rst_a => counter_reg_aux[6].ACLR
+rst_a => counter_reg_aux[7].ACLR
+rst_a => counter_reg_aux[8].ACLR
+rst_a => counter_reg_aux[9].ACLR
+rst_a => counter_reg_aux[10].ACLR
+rst_a => counter_reg_aux[11].ACLR
+rst_a => counter_reg_aux[12].ACLR
+rst_a => counter_reg_aux[13].ACLR
+rst_a => counter_reg_aux[14].ACLR
+rst_a => counter_reg_aux[15].ACLR
+rst_a => counter_reg_aux[16].ACLR
+rst_a => counter_reg_aux[17].ACLR
+rst_a => counter_reg_aux[18].ACLR
+flag_check <= flag_check~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|counter_9999|debouncer:D2|ff_d:REGISTRO_GUARDAR
+clk => q_out[0]~reg0.CLK
+rst_a => q_out[0]~reg0.ACLR
+d_in[0] => q_out[0]~reg0.DATAIN
+q_out[0] <= q_out[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

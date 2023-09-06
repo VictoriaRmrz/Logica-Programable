@@ -1,0 +1,142 @@
+|wrapper
+SW[0] => SW[0].IN1
+SW[1] => SW[1].IN1
+SW[2] => SW[2].IN1
+SW[3] => SW[3].IN1
+SW[4] => ~NO_FANOUT~
+SW[5] => ~NO_FANOUT~
+SW[6] => ~NO_FANOUT~
+SW[7] => ~NO_FANOUT~
+SW[8] => ~NO_FANOUT~
+SW[9] => ~NO_FANOUT~
+MAX10_CLK1_50 => MAX10_CLK1_50.IN1
+KEY[0] => KEY[0].IN1
+KEY[1] => ~NO_FANOUT~
+HEX0[0] << clk_div_with_7seven:WRAPPER.salidas
+HEX0[1] << clk_div_with_7seven:WRAPPER.salidas
+HEX0[2] << clk_div_with_7seven:WRAPPER.salidas
+HEX0[3] << clk_div_with_7seven:WRAPPER.salidas
+HEX0[4] << clk_div_with_7seven:WRAPPER.salidas
+HEX0[5] << clk_div_with_7seven:WRAPPER.salidas
+HEX0[6] << clk_div_with_7seven:WRAPPER.salidas
+
+
+|wrapper|clk_div_with_7seven:WRAPPER
+clk => clk.IN1
+rst => rst.IN2
+entradas[0] => entradas[0].IN1
+entradas[1] => entradas[1].IN1
+entradas[2] => entradas[2].IN1
+entradas[3] => entradas[3].IN1
+salidas[0] <= seven7:DISPLAY.seg
+salidas[1] <= seven7:DISPLAY.seg
+salidas[2] <= seven7:DISPLAY.seg
+salidas[3] <= seven7:DISPLAY.seg
+salidas[4] <= seven7:DISPLAY.seg
+salidas[5] <= seven7:DISPLAY.seg
+salidas[6] <= seven7:DISPLAY.seg
+
+
+|wrapper|clk_div_with_7seven:WRAPPER|clk_divider:DIV
+clk => clk_div~reg0.CLK
+clk => count[0].CLK
+clk => count[1].CLK
+clk => count[2].CLK
+clk => count[3].CLK
+clk => count[4].CLK
+clk => count[5].CLK
+clk => count[6].CLK
+clk => count[7].CLK
+clk => count[8].CLK
+clk => count[9].CLK
+clk => count[10].CLK
+clk => count[11].CLK
+clk => count[12].CLK
+clk => count[13].CLK
+clk => count[14].CLK
+clk => count[15].CLK
+clk => count[16].CLK
+clk => count[17].CLK
+clk => count[18].CLK
+clk => count[19].CLK
+clk => count[20].CLK
+clk => count[21].CLK
+clk => count[22].CLK
+clk => count[23].CLK
+clk => count[24].CLK
+clk => count[25].CLK
+clk => count[26].CLK
+clk => count[27].CLK
+clk => count[28].CLK
+clk => count[29].CLK
+clk => count[30].CLK
+clk => count[31].CLK
+rst => count[0].ACLR
+rst => count[1].ACLR
+rst => count[2].ACLR
+rst => count[3].ACLR
+rst => count[4].ACLR
+rst => count[5].ACLR
+rst => count[6].ACLR
+rst => count[7].ACLR
+rst => count[8].ACLR
+rst => count[9].ACLR
+rst => count[10].ACLR
+rst => count[11].ACLR
+rst => count[12].ACLR
+rst => count[13].ACLR
+rst => count[14].ACLR
+rst => count[15].ACLR
+rst => count[16].ACLR
+rst => count[17].ACLR
+rst => count[18].ACLR
+rst => count[19].ACLR
+rst => count[20].ACLR
+rst => count[21].ACLR
+rst => count[22].ACLR
+rst => count[23].ACLR
+rst => count[24].ACLR
+rst => count[25].ACLR
+rst => count[26].ACLR
+rst => count[27].ACLR
+rst => count[28].ACLR
+rst => count[29].ACLR
+rst => count[30].ACLR
+rst => count[31].ACLR
+rst => clk_div~reg0.ACLR
+clk_div <= clk_div~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|wrapper|clk_div_with_7seven:WRAPPER|contador:COUNTER
+clk => counter_out[0]~reg0.CLK
+clk => counter_out[1]~reg0.CLK
+clk => counter_out[2]~reg0.CLK
+clk => counter_out[3]~reg0.CLK
+rst => counter_out[0]~reg0.ACLR
+rst => counter_out[1]~reg0.ACLR
+rst => counter_out[2]~reg0.ACLR
+rst => counter_out[3]~reg0.ACLR
+c_max[0] => LessThan0.IN4
+c_max[1] => LessThan0.IN3
+c_max[2] => LessThan0.IN2
+c_max[3] => LessThan0.IN1
+counter_out[0] <= counter_out[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+counter_out[1] <= counter_out[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+counter_out[2] <= counter_out[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+counter_out[3] <= counter_out[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|wrapper|clk_div_with_7seven:WRAPPER|seven7:DISPLAY
+bcd[0] => Decoder0.IN3
+bcd[1] => Decoder0.IN2
+bcd[2] => Decoder0.IN1
+bcd[3] => Decoder0.IN0
+seg[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+seg[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+seg[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+seg[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+seg[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+seg[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+seg[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+

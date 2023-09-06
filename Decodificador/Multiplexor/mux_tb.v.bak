@@ -1,0 +1,43 @@
+/*
+Cama de pruebas, compuertas combinacionales
+*/
+
+
+module mux_tb();
+	
+reg input_gate_a, input_gate_b, input_gate_sel;
+wire output_m_out;
+
+
+mux DUT(
+
+.input_a(input_gate_a),
+.input_b(input_gate_b),
+.input_sel(input_gate_sel),
+.m_out(output_gate_m_out)
+);
+
+
+
+initial
+begin
+	input_gate_a = 0;
+	input_gate_b = 1;
+	input_gate_sel = 0;
+	#100
+	input_gate_a = 0;
+	input_gate_b = 1;
+	input_gate_sel = 1;
+	#100
+	input_gate_a = 1;
+	input_gate_b = 0;
+	input_gate_sel = 0;
+	#100
+	input_gate_a = 1;
+	input_gate_b = 0;
+	input_gate_sel = 1;
+	#100
+	$stop;
+end
+
+endmodule

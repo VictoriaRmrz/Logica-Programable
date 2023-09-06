@@ -1,0 +1,32 @@
+module FSM_with_debouncer #(parameter Bits = 4)(
+	input clk, rst_a, enable_data,
+	input [Bits - 1 : 0] entradas,
+	output [6:0] salidas,
+	output LEDR
+);
+
+wire p_b_debouncer_wire;
+wire [3:0] salida_a_segmentos;
+
+debouncer DEB(
+	.clk(clk),
+	.rst_a(rst_a),
+	.p_b(enable_data),
+	.p_b_debouncer(p_b_debouncer_wire)
+);
+
+FSM_PW MAQUINA_ESTADOS(
+	.clk(clk),
+	.rst_a(rst_a),
+	.enable_data(p_b_debouncer_wire),
+	.entrada_pw(entradas),
+	.pass(LEDR)
+);
+
+seven7 DISPLAY(
+	.bcd(salida_a_segmentos),
+	.seg(salidas)
+);
+
+
+endmodule

@@ -1,0 +1,125 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'MAX10_CLK1_50'
+Slack : -2.923
+TNS   : -49.765
+
+Type  : Slow 1200mV 85C Model Setup 'FSM_with_debouncer:WRAPPER|FSM_PW:MAQUINA_ESTADOS|enable_posedge'
+Slack : -1.482
+TNS   : -5.548
+
+Type  : Slow 1200mV 85C Model Setup 'FSM_with_debouncer:WRAPPER|debouncer:DEB|ff_d:REGISTRO_GUARDAR|q_out[0]'
+Slack : -0.571
+TNS   : -0.571
+
+Type  : Slow 1200mV 85C Model Hold 'MAX10_CLK1_50'
+Slack : 0.399
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'FSM_with_debouncer:WRAPPER|debouncer:DEB|ff_d:REGISTRO_GUARDAR|q_out[0]'
+Slack : 0.538
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'FSM_with_debouncer:WRAPPER|FSM_PW:MAQUINA_ESTADOS|enable_posedge'
+Slack : 1.016
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'MAX10_CLK1_50'
+Slack : -3.000
+TNS   : -38.075
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'FSM_with_debouncer:WRAPPER|FSM_PW:MAQUINA_ESTADOS|enable_posedge'
+Slack : -1.403
+TNS   : -8.418
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'FSM_with_debouncer:WRAPPER|debouncer:DEB|counterDebouncer:CONTEO_DEBOUNCER|flag_check'
+Slack : -1.403
+TNS   : -1.403
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'FSM_with_debouncer:WRAPPER|debouncer:DEB|ff_d:REGISTRO_GUARDAR|q_out[0]'
+Slack : -1.403
+TNS   : -1.403
+
+Type  : Slow 1200mV 0C Model Setup 'MAX10_CLK1_50'
+Slack : -2.616
+TNS   : -43.977
+
+Type  : Slow 1200mV 0C Model Setup 'FSM_with_debouncer:WRAPPER|FSM_PW:MAQUINA_ESTADOS|enable_posedge'
+Slack : -1.289
+TNS   : -4.686
+
+Type  : Slow 1200mV 0C Model Setup 'FSM_with_debouncer:WRAPPER|debouncer:DEB|ff_d:REGISTRO_GUARDAR|q_out[0]'
+Slack : -0.473
+TNS   : -0.473
+
+Type  : Slow 1200mV 0C Model Hold 'MAX10_CLK1_50'
+Slack : 0.367
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'FSM_with_debouncer:WRAPPER|debouncer:DEB|ff_d:REGISTRO_GUARDAR|q_out[0]'
+Slack : 0.480
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'FSM_with_debouncer:WRAPPER|FSM_PW:MAQUINA_ESTADOS|enable_posedge'
+Slack : 0.951
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'MAX10_CLK1_50'
+Slack : -3.000
+TNS   : -38.075
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'FSM_with_debouncer:WRAPPER|FSM_PW:MAQUINA_ESTADOS|enable_posedge'
+Slack : -1.403
+TNS   : -8.418
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'FSM_with_debouncer:WRAPPER|debouncer:DEB|counterDebouncer:CONTEO_DEBOUNCER|flag_check'
+Slack : -1.403
+TNS   : -1.403
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'FSM_with_debouncer:WRAPPER|debouncer:DEB|ff_d:REGISTRO_GUARDAR|q_out[0]'
+Slack : -1.403
+TNS   : -1.403
+
+Type  : Fast 1200mV 0C Model Setup 'MAX10_CLK1_50'
+Slack : -0.616
+TNS   : -7.686
+
+Type  : Fast 1200mV 0C Model Setup 'FSM_with_debouncer:WRAPPER|FSM_PW:MAQUINA_ESTADOS|enable_posedge'
+Slack : -0.019
+TNS   : -0.019
+
+Type  : Fast 1200mV 0C Model Setup 'FSM_with_debouncer:WRAPPER|debouncer:DEB|ff_d:REGISTRO_GUARDAR|q_out[0]'
+Slack : 0.071
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'MAX10_CLK1_50'
+Slack : 0.159
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'FSM_with_debouncer:WRAPPER|debouncer:DEB|ff_d:REGISTRO_GUARDAR|q_out[0]'
+Slack : 0.203
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'FSM_with_debouncer:WRAPPER|FSM_PW:MAQUINA_ESTADOS|enable_posedge'
+Slack : 0.367
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'MAX10_CLK1_50'
+Slack : -3.000
+TNS   : -32.671
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'FSM_with_debouncer:WRAPPER|FSM_PW:MAQUINA_ESTADOS|enable_posedge'
+Slack : -1.000
+TNS   : -6.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'FSM_with_debouncer:WRAPPER|debouncer:DEB|counterDebouncer:CONTEO_DEBOUNCER|flag_check'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'FSM_with_debouncer:WRAPPER|debouncer:DEB|ff_d:REGISTRO_GUARDAR|q_out[0]'
+Slack : -1.000
+TNS   : -1.000
+
+------------------------------------------------------------

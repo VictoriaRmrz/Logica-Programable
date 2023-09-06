@@ -1,0 +1,62 @@
+# Reading pref.tcl
+# do FSM_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/victo/OneDrive/Escritorio/Escuela\ Victoria/Universidad/Logica\ Programable/Clock\ Divider {C:/Users/victo/OneDrive/Escritorio/Escuela Victoria/Universidad/Logica Programable/Clock Divider/clk_divider.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:42:47 on Mar 14,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/victo/OneDrive/Escritorio/Escuela Victoria/Universidad/Logica Programable/Clock Divider" C:/Users/victo/OneDrive/Escritorio/Escuela Victoria/Universidad/Logica Programable/Clock Divider/clk_divider.v 
+# -- Compiling module clk_divider
+# 
+# Top level modules:
+# 	clk_divider
+# End time: 11:42:48 on Mar 14,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/victo/OneDrive/Escritorio/Escuela\ Victoria/Universidad/Logica\ Programable/Maquina\ Estados\ 2 {C:/Users/victo/OneDrive/Escritorio/Escuela Victoria/Universidad/Logica Programable/Maquina Estados 2/FSM_sequence.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:42:49 on Mar 14,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/victo/OneDrive/Escritorio/Escuela Victoria/Universidad/Logica Programable/Maquina Estados 2" C:/Users/victo/OneDrive/Escritorio/Escuela Victoria/Universidad/Logica Programable/Maquina Estados 2/FSM_sequence.v 
+# -- Compiling module FSM_sequence
+# 
+# Top level modules:
+# 	FSM_sequence
+# End time: 11:42:49 on Mar 14,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/victo/OneDrive/Escritorio/Escuela\ Victoria/Universidad/Logica\ Programable/Maquina\ Estados\ 2 {C:/Users/victo/OneDrive/Escritorio/Escuela Victoria/Universidad/Logica Programable/Maquina Estados 2/FSM_sequence_tb.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:42:49 on Mar 14,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/victo/OneDrive/Escritorio/Escuela Victoria/Universidad/Logica Programable/Maquina Estados 2" C:/Users/victo/OneDrive/Escritorio/Escuela Victoria/Universidad/Logica Programable/Maquina Estados 2/FSM_sequence_tb.v 
+# -- Compiling module FSM_sequence_tb
+# 
+# Top level modules:
+# 	FSM_sequence_tb
+# End time: 11:42:49 on Mar 14,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs="+acc"  FSM_sequence_tb
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs=""+acc"" FSM_sequence_tb 
+# Start time: 11:42:50 on Mar 14,2023
+# Loading work.FSM_sequence_tb
+# Loading work.FSM_sequence
+# Loading work.clk_divider
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# ** Note: $stop    : C:/Users/victo/OneDrive/Escritorio/Escuela Victoria/Universidad/Logica Programable/Maquina Estados 2/FSM_sequence_tb.v(29)
+#    Time: 515 ps  Iteration: 0  Instance: /FSM_sequence_tb
+# Break in Module FSM_sequence_tb at C:/Users/victo/OneDrive/Escritorio/Escuela Victoria/Universidad/Logica Programable/Maquina Estados 2/FSM_sequence_tb.v line 29
+# End time: 11:51:58 on Mar 14,2023, Elapsed time: 0:09:08
+# Errors: 0, Warnings: 0

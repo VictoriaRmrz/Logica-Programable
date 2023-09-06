@@ -1,0 +1,65 @@
+|TOP
+i_Clock => i_Clock.IN1
+i_Rx_Serial => i_Rx_Serial.IN1
+o_Rx_DV << Receptor:RECEPTOR.o_Rx_DV
+seg1[0] << seven7:DISPLAY_1.seg
+seg1[1] << seven7:DISPLAY_1.seg
+seg1[2] << seven7:DISPLAY_1.seg
+seg1[3] << seven7:DISPLAY_1.seg
+seg1[4] << seven7:DISPLAY_1.seg
+seg1[5] << seven7:DISPLAY_1.seg
+seg1[6] << seven7:DISPLAY_1.seg
+seg2[0] << seven7:DISPLAY_2.seg
+seg2[1] << seven7:DISPLAY_2.seg
+seg2[2] << seven7:DISPLAY_2.seg
+seg2[3] << seven7:DISPLAY_2.seg
+seg2[4] << seven7:DISPLAY_2.seg
+seg2[5] << seven7:DISPLAY_2.seg
+seg2[6] << seven7:DISPLAY_2.seg
+
+
+|TOP|Receptor:RECEPTOR
+i_Clock => r_Rx_DV.CLK
+i_Clock => r_Rx_Data.CLK
+i_Clock => r_Rx_Data_R.CLK
+i_Clock => r_SM_Main~1.DATAIN
+i_Rx_Serial => r_Rx_Data_R.DATAIN
+o_Rx_DV <= r_Rx_DV.DB_MAX_OUTPUT_PORT_TYPE
+o_Rx_Byte[0] <= <GND>
+o_Rx_Byte[1] <= <GND>
+o_Rx_Byte[2] <= <GND>
+o_Rx_Byte[3] <= <GND>
+o_Rx_Byte[4] <= <GND>
+o_Rx_Byte[5] <= <GND>
+o_Rx_Byte[6] <= <GND>
+o_Rx_Byte[7] <= <GND>
+
+
+|TOP|seven7:DISPLAY_1
+bcd[0] => Decoder0.IN3
+bcd[1] => Decoder0.IN2
+bcd[2] => Decoder0.IN1
+bcd[3] => Decoder0.IN0
+seg[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+seg[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+seg[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+seg[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+seg[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+seg[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+seg[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|TOP|seven7:DISPLAY_2
+bcd[0] => Decoder0.IN3
+bcd[1] => Decoder0.IN2
+bcd[2] => Decoder0.IN1
+bcd[3] => Decoder0.IN0
+seg[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+seg[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+seg[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+seg[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+seg[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+seg[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+seg[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+

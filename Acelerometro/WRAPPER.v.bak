@@ -1,0 +1,5 @@
+module WRAPPER(
+	input [9:0] SW,
+	input MAX10_CLK1_50,
+	output 
+);

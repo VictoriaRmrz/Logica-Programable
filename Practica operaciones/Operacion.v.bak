@@ -1,0 +1,8 @@
+module Operacion(
+	input x [3:0];
+	output reg resultado [7:0]
+);
+
+	assign resultado = x**4 + 2*(x**3) + (x/8);
+
+endmodule

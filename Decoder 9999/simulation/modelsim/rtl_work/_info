@@ -1,0 +1,85 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/victo/OneDrive/Escritorio/Escuela Victoria/Universidad/Logica Programable/Decoder 9999/simulation/modelsim
+vdecoder9999
+Z1 !s110 1677628535
+!i10b 1
+!s100 TPPQD_B7g3BW^SKRZfJ7[3
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+II5Zo]04A=i8oLF5ANkUJ<3
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1676993008
+8C:/Users/victo/OneDrive/Escritorio/Escuela Victoria/Universidad/Logica Programable/Decoder 9999/decoder9999.v
+FC:/Users/victo/OneDrive/Escritorio/Escuela Victoria/Universidad/Logica Programable/Decoder 9999/decoder9999.v
+!i122 1
+L0 1 36
+Z4 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z5 !s108 1677628535.000000
+!s107 C:/Users/victo/OneDrive/Escritorio/Escuela Victoria/Universidad/Logica Programable/Decoder 9999/decoder9999.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/victo/OneDrive/Escritorio/Escuela Victoria/Universidad/Logica Programable/Decoder 9999|C:/Users/victo/OneDrive/Escritorio/Escuela Victoria/Universidad/Logica Programable/Decoder 9999/decoder9999.v|
+!i113 1
+Z6 o-vlog01compat -work work
+Z7 !s92 -vlog01compat -work work {+incdir+C:/Users/victo/OneDrive/Escritorio/Escuela Victoria/Universidad/Logica Programable/Decoder 9999}
+Z8 tCvgOpt 0
+vdecoderSimple
+R1
+!i10b 1
+!s100 oJ=BAdXl8eU>h1_3V3b3G3
+R2
+Ih[6k2[c6RIW_nNcfaPcHX3
+R3
+R0
+w1676992616
+8C:/Users/victo/OneDrive/Escritorio/Escuela Victoria/Universidad/Logica Programable/Decoder 9999/decoderSimple.v
+FC:/Users/victo/OneDrive/Escritorio/Escuela Victoria/Universidad/Logica Programable/Decoder 9999/decoderSimple.v
+!i122 0
+L0 1 44
+R4
+r1
+!s85 0
+31
+!s108 1677628534.000000
+!s107 C:/Users/victo/OneDrive/Escritorio/Escuela Victoria/Universidad/Logica Programable/Decoder 9999/decoderSimple.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/victo/OneDrive/Escritorio/Escuela Victoria/Universidad/Logica Programable/Decoder 9999|C:/Users/victo/OneDrive/Escritorio/Escuela Victoria/Universidad/Logica Programable/Decoder 9999/decoderSimple.v|
+!i113 1
+R6
+R7
+R8
+ndecoder@simple
+vdecoderSimple_tb
+R1
+!i10b 1
+!s100 dM3zEf2gWomF1bILMAD1K0
+R2
+IY;;5KmP18lOXgJ`BiiDKE0
+R3
+R0
+w1676989137
+8C:/Users/victo/OneDrive/Escritorio/Escuela Victoria/Universidad/Logica Programable/Decoder 9999/decoderSimple_tb.v
+FC:/Users/victo/OneDrive/Escritorio/Escuela Victoria/Universidad/Logica Programable/Decoder 9999/decoderSimple_tb.v
+!i122 2
+L0 1 45
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/victo/OneDrive/Escritorio/Escuela Victoria/Universidad/Logica Programable/Decoder 9999/decoderSimple_tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/victo/OneDrive/Escritorio/Escuela Victoria/Universidad/Logica Programable/Decoder 9999|C:/Users/victo/OneDrive/Escritorio/Escuela Victoria/Universidad/Logica Programable/Decoder 9999/decoderSimple_tb.v|
+!i113 1
+R6
+R7
+R8
+ndecoder@simple_tb

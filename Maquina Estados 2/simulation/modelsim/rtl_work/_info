@@ -1,0 +1,85 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/victo/OneDrive/Escritorio/Escuela Victoria/Universidad/Logica Programable/Maquina Estados 2/simulation/modelsim
+vclk_divider
+!s110 1678815768
+!i10b 1
+!s100 h7DNjMLNec3M47DIHOHKc3
+Z1 !s11b Dg1SIo80bB@j0V0VzS_@n1
+In00P=`Bn`HdHEWefi><Y^3
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1678200888
+8C:/Users/victo/OneDrive/Escritorio/Escuela Victoria/Universidad/Logica Programable/Clock Divider/clk_divider.v
+FC:/Users/victo/OneDrive/Escritorio/Escuela Victoria/Universidad/Logica Programable/Clock Divider/clk_divider.v
+!i122 0
+L0 1 30
+Z3 OV;L;2020.1;71
+r1
+!s85 0
+31
+!s108 1678815767.000000
+!s107 C:/Users/victo/OneDrive/Escritorio/Escuela Victoria/Universidad/Logica Programable/Clock Divider/clk_divider.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/victo/OneDrive/Escritorio/Escuela Victoria/Universidad/Logica Programable/Clock Divider|C:/Users/victo/OneDrive/Escritorio/Escuela Victoria/Universidad/Logica Programable/Clock Divider/clk_divider.v|
+!i113 1
+Z4 o-vlog01compat -work work
+!s92 -vlog01compat -work work {+incdir+C:/Users/victo/OneDrive/Escritorio/Escuela Victoria/Universidad/Logica Programable/Clock Divider}
+Z5 tCvgOpt 0
+vFSM_sequence
+Z6 !s110 1678815769
+!i10b 1
+!s100 UZS]c:G6aNGE=L8@m5dMe1
+R1
+IHhHinGFk784N>OTonZoEj1
+R2
+R0
+w1677678589
+8C:/Users/victo/OneDrive/Escritorio/Escuela Victoria/Universidad/Logica Programable/Maquina Estados 2/FSM_sequence.v
+FC:/Users/victo/OneDrive/Escritorio/Escuela Victoria/Universidad/Logica Programable/Maquina Estados 2/FSM_sequence.v
+!i122 1
+L0 1 57
+R3
+r1
+!s85 0
+31
+Z7 !s108 1678815769.000000
+!s107 C:/Users/victo/OneDrive/Escritorio/Escuela Victoria/Universidad/Logica Programable/Maquina Estados 2/FSM_sequence.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/victo/OneDrive/Escritorio/Escuela Victoria/Universidad/Logica Programable/Maquina Estados 2|C:/Users/victo/OneDrive/Escritorio/Escuela Victoria/Universidad/Logica Programable/Maquina Estados 2/FSM_sequence.v|
+!i113 1
+R4
+Z8 !s92 -vlog01compat -work work {+incdir+C:/Users/victo/OneDrive/Escritorio/Escuela Victoria/Universidad/Logica Programable/Maquina Estados 2}
+R5
+n@f@s@m_sequence
+vFSM_sequence_tb
+R6
+!i10b 1
+!s100 =4IQ[;Wg9l>n@R[Q]K2=U2
+R1
+IXGYh?UmoJcDA3jdK91nSZ2
+R2
+R0
+w1678811920
+8C:/Users/victo/OneDrive/Escritorio/Escuela Victoria/Universidad/Logica Programable/Maquina Estados 2/FSM_sequence_tb.v
+FC:/Users/victo/OneDrive/Escritorio/Escuela Victoria/Universidad/Logica Programable/Maquina Estados 2/FSM_sequence_tb.v
+!i122 2
+L0 1 33
+R3
+r1
+!s85 0
+31
+R7
+!s107 C:/Users/victo/OneDrive/Escritorio/Escuela Victoria/Universidad/Logica Programable/Maquina Estados 2/FSM_sequence_tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/victo/OneDrive/Escritorio/Escuela Victoria/Universidad/Logica Programable/Maquina Estados 2|C:/Users/victo/OneDrive/Escritorio/Escuela Victoria/Universidad/Logica Programable/Maquina Estados 2/FSM_sequence_tb.v|
+!i113 1
+R4
+R8
+R5
+n@f@s@m_sequence_tb

@@ -1,0 +1,115 @@
+# Reading pref.tcl
+# do FSM_PW_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/victo/OneDrive/Escritorio/Escuela\ Victoria/Universidad/Logica\ Programable/7\ segmentos {C:/Users/victo/OneDrive/Escritorio/Escuela Victoria/Universidad/Logica Programable/7 segmentos/seven7.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 08:09:32 on Mar 09,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/victo/OneDrive/Escritorio/Escuela Victoria/Universidad/Logica Programable/7 segmentos" C:/Users/victo/OneDrive/Escritorio/Escuela Victoria/Universidad/Logica Programable/7 segmentos/seven7.v 
+# -- Compiling module seven7
+# 
+# Top level modules:
+# 	seven7
+# End time: 08:09:33 on Mar 09,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/victo/OneDrive/Escritorio/Escuela\ Victoria/Universidad/Logica\ Programable/Debouncer {C:/Users/victo/OneDrive/Escritorio/Escuela Victoria/Universidad/Logica Programable/Debouncer/ff_d.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 08:09:33 on Mar 09,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/victo/OneDrive/Escritorio/Escuela Victoria/Universidad/Logica Programable/Debouncer" C:/Users/victo/OneDrive/Escritorio/Escuela Victoria/Universidad/Logica Programable/Debouncer/ff_d.v 
+# -- Compiling module ff_d
+# 
+# Top level modules:
+# 	ff_d
+# End time: 08:09:33 on Mar 09,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/victo/OneDrive/Escritorio/Escuela\ Victoria/Universidad/Logica\ Programable/Debouncer {C:/Users/victo/OneDrive/Escritorio/Escuela Victoria/Universidad/Logica Programable/Debouncer/debouncer.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 08:09:33 on Mar 09,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/victo/OneDrive/Escritorio/Escuela Victoria/Universidad/Logica Programable/Debouncer" C:/Users/victo/OneDrive/Escritorio/Escuela Victoria/Universidad/Logica Programable/Debouncer/debouncer.v 
+# -- Compiling module debouncer
+# 
+# Top level modules:
+# 	debouncer
+# End time: 08:09:33 on Mar 09,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/victo/OneDrive/Escritorio/Escuela\ Victoria/Universidad/Logica\ Programable/Debouncer {C:/Users/victo/OneDrive/Escritorio/Escuela Victoria/Universidad/Logica Programable/Debouncer/counterDebouncer.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 08:09:33 on Mar 09,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/victo/OneDrive/Escritorio/Escuela Victoria/Universidad/Logica Programable/Debouncer" C:/Users/victo/OneDrive/Escritorio/Escuela Victoria/Universidad/Logica Programable/Debouncer/counterDebouncer.v 
+# -- Compiling module counterDebouncer
+# 
+# Top level modules:
+# 	counterDebouncer
+# End time: 08:09:33 on Mar 09,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/victo/OneDrive/Escritorio/Escuela\ Victoria/Universidad/Logica\ Programable/Password_FSM {C:/Users/victo/OneDrive/Escritorio/Escuela Victoria/Universidad/Logica Programable/Password_FSM/FSM_PW.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 08:09:33 on Mar 09,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/victo/OneDrive/Escritorio/Escuela Victoria/Universidad/Logica Programable/Password_FSM" C:/Users/victo/OneDrive/Escritorio/Escuela Victoria/Universidad/Logica Programable/Password_FSM/FSM_PW.v 
+# -- Compiling module FSM_PW
+# 
+# Top level modules:
+# 	FSM_PW
+# End time: 08:09:33 on Mar 09,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/victo/OneDrive/Escritorio/Escuela\ Victoria/Universidad/Logica\ Programable/Password_FSM {C:/Users/victo/OneDrive/Escritorio/Escuela Victoria/Universidad/Logica Programable/Password_FSM/FSM_with_debouncer.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 08:09:33 on Mar 09,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/victo/OneDrive/Escritorio/Escuela Victoria/Universidad/Logica Programable/Password_FSM" C:/Users/victo/OneDrive/Escritorio/Escuela Victoria/Universidad/Logica Programable/Password_FSM/FSM_with_debouncer.v 
+# -- Compiling module FSM_with_debouncer
+# 
+# Top level modules:
+# 	FSM_with_debouncer
+# End time: 08:09:34 on Mar 09,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/victo/OneDrive/Escritorio/Escuela\ Victoria/Universidad/Logica\ Programable/Password_FSM {C:/Users/victo/OneDrive/Escritorio/Escuela Victoria/Universidad/Logica Programable/Password_FSM/wrapper.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 08:09:34 on Mar 09,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/victo/OneDrive/Escritorio/Escuela Victoria/Universidad/Logica Programable/Password_FSM" C:/Users/victo/OneDrive/Escritorio/Escuela Victoria/Universidad/Logica Programable/Password_FSM/wrapper.v 
+# -- Compiling module wrapper
+# 
+# Top level modules:
+# 	wrapper
+# End time: 08:09:34 on Mar 09,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/victo/OneDrive/Escritorio/Escuela\ Victoria/Universidad/Logica\ Programable/Password_FSM {C:/Users/victo/OneDrive/Escritorio/Escuela Victoria/Universidad/Logica Programable/Password_FSM/FSM_PW_tb.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 08:09:34 on Mar 09,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/victo/OneDrive/Escritorio/Escuela Victoria/Universidad/Logica Programable/Password_FSM" C:/Users/victo/OneDrive/Escritorio/Escuela Victoria/Universidad/Logica Programable/Password_FSM/FSM_PW_tb.v 
+# -- Compiling module FSM_PW_tb
+# 
+# Top level modules:
+# 	FSM_PW_tb
+# End time: 08:09:34 on Mar 09,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs="+acc"  FSM_PW_tb
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs=""+acc"" FSM_PW_tb 
+# Start time: 08:09:36 on Mar 09,2023
+# Loading work.FSM_PW_tb
+# Loading work.FSM_PW
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'DUT'.  Expected 7, found 5.
+#    Time: 0 ps  Iteration: 0  Instance: /FSM_PW_tb/DUT File: C:/Users/victo/OneDrive/Escritorio/Escuela Victoria/Universidad/Logica Programable/Password_FSM/FSM_PW_tb.v Line: 10
+# ** Warning: (vsim-3722) C:/Users/victo/OneDrive/Escritorio/Escuela Victoria/Universidad/Logica Programable/Password_FSM/FSM_PW_tb.v(10): [TFMPC] - Missing connection for port 'estado_led'.
+# ** Warning: (vsim-3722) C:/Users/victo/OneDrive/Escritorio/Escuela Victoria/Universidad/Logica Programable/Password_FSM/FSM_PW_tb.v(10): [TFMPC] - Missing connection for port 'estado_debouncer'.
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# ** Note: $stop    : C:/Users/victo/OneDrive/Escritorio/Escuela Victoria/Universidad/Logica Programable/Password_FSM/FSM_PW_tb.v(55)
+#    Time: 795 ps  Iteration: 0  Instance: /FSM_PW_tb
+# Break in Module FSM_PW_tb at C:/Users/victo/OneDrive/Escritorio/Escuela Victoria/Universidad/Logica Programable/Password_FSM/FSM_PW_tb.v line 55
+# End time: 08:10:32 on Mar 09,2023, Elapsed time: 0:00:56
+# Errors: 0, Warnings: 3

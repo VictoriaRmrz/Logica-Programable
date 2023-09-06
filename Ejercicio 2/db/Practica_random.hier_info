@@ -1,0 +1,19 @@
+|COMPUERTA
+input_a => output_gate.IN0
+input_a => output_gate.IN0
+input_a => output_gate.IN0
+input_a => output_gate[7].DATAIN
+input_a => output_gate[3].DATAIN
+input_b => output_gate.IN1
+input_b => output_gate.IN1
+input_b => output_gate.IN1
+output_gate[0] << output_gate.DB_MAX_OUTPUT_PORT_TYPE
+output_gate[1] << output_gate.DB_MAX_OUTPUT_PORT_TYPE
+output_gate[2] << output_gate.DB_MAX_OUTPUT_PORT_TYPE
+output_gate[3] << input_a.DB_MAX_OUTPUT_PORT_TYPE
+output_gate[4] << output_gate.DB_MAX_OUTPUT_PORT_TYPE
+output_gate[5] << output_gate.DB_MAX_OUTPUT_PORT_TYPE
+output_gate[6] << output_gate.DB_MAX_OUTPUT_PORT_TYPE
+output_gate[7] << input_a.DB_MAX_OUTPUT_PORT_TYPE
+
+

@@ -1,0 +1,17 @@
+module contador(
+	input clk,
+	input [3:0] c_max,
+	output reg [3:0] counter_out
+);
+
+
+always @(posedge clk)
+begin
+	if(counter_out >= c_max)
+		counter_out <= 0;
+	else
+		counter_out <= counter_out + 1;
+
+
+end
+endmodule

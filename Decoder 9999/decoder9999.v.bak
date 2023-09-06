@@ -1,0 +1,17 @@
+module decoder9999(
+	input [9:0] entrada_9999,
+	output [6:0]	  sal_un,
+						  sal_dec,
+						  sal_cen,
+						  sal_mill
+);
+
+wire [3:0] entrada_unidades = entrada_9999 % 10;
+
+decoderSimple UNIDADES(
+	.entrada_decoder(entrada_unidades),
+	.salida_decoder(salida_un)
+);
+
+
+endmodule

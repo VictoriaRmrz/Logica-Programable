@@ -1,0 +1,77 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'MAX10_CLK1_50'
+Slack : -3.510
+TNS   : -49.640
+
+Type  : Slow 1200mV 85C Model Setup 'clk_div_with_7seven:WRAPPER|clk_divider:DIV|clk_div'
+Slack : -0.774
+TNS   : -2.797
+
+Type  : Slow 1200mV 85C Model Hold 'clk_div_with_7seven:WRAPPER|clk_divider:DIV|clk_div'
+Slack : 0.343
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'MAX10_CLK1_50'
+Slack : 0.553
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'MAX10_CLK1_50'
+Slack : -3.000
+TNS   : -43.326
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clk_div_with_7seven:WRAPPER|clk_divider:DIV|clk_div'
+Slack : -1.222
+TNS   : -4.888
+
+Type  : Slow 1200mV 0C Model Setup 'MAX10_CLK1_50'
+Slack : -3.127
+TNS   : -41.959
+
+Type  : Slow 1200mV 0C Model Setup 'clk_div_with_7seven:WRAPPER|clk_divider:DIV|clk_div'
+Slack : -0.604
+TNS   : -2.161
+
+Type  : Slow 1200mV 0C Model Hold 'clk_div_with_7seven:WRAPPER|clk_divider:DIV|clk_div'
+Slack : 0.313
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'MAX10_CLK1_50'
+Slack : 0.507
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'MAX10_CLK1_50'
+Slack : -3.000
+TNS   : -43.326
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clk_div_with_7seven:WRAPPER|clk_divider:DIV|clk_div'
+Slack : -1.222
+TNS   : -4.888
+
+Type  : Fast 1200mV 0C Model Setup 'MAX10_CLK1_50'
+Slack : -1.247
+TNS   : -8.728
+
+Type  : Fast 1200mV 0C Model Setup 'clk_div_with_7seven:WRAPPER|clk_divider:DIV|clk_div'
+Slack : 0.140
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'clk_div_with_7seven:WRAPPER|clk_divider:DIV|clk_div'
+Slack : 0.156
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'MAX10_CLK1_50'
+Slack : 0.250
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'MAX10_CLK1_50'
+Slack : -3.000
+TNS   : -41.619
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clk_div_with_7seven:WRAPPER|clk_divider:DIV|clk_div'
+Slack : -1.000
+TNS   : -4.000
+
+------------------------------------------------------------

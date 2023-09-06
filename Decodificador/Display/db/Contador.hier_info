@@ -1,0 +1,18 @@
+|dec_display
+s0 => a.DATAIN
+s0 => d.DATAIN
+s0 => e.DATAIN
+s0 => f.IN0
+s0 => g.IN0
+s1 => g.IN1
+s1 => c.DATAIN
+s1 => f.IN1
+a << s0.DB_MAX_OUTPUT_PORT_TYPE
+b << <GND>
+c << s1.DB_MAX_OUTPUT_PORT_TYPE
+d << s0.DB_MAX_OUTPUT_PORT_TYPE
+e << s0.DB_MAX_OUTPUT_PORT_TYPE
+f << f.DB_MAX_OUTPUT_PORT_TYPE
+g << g.DB_MAX_OUTPUT_PORT_TYPE
+
+

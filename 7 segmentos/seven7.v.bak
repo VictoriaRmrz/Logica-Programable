@@ -1,0 +1,42 @@
+module seven7 (bcd,seg);
+
+input [3:0] bcd;
+output reg [6:0] seg;
+
+always @(bcd)
+begin
+
+	case (bcd)	
+		0:         //gfedcba
+			seg = 7'b 0000001;
+		1:
+			seg = 7'b 1111001;
+		2:
+			seg = 7'b 0100100;
+		3:
+			seg = 7'b 0110000;
+		4:
+			seg = 7'b 0011001;
+		5:
+			seg = 7'b 0010010;
+		6:
+			seg = 7'b 0000010;
+		7:
+			seg = 7'b 1111000;
+		8:
+			seg = 7'b 0000000;
+		9:
+			seg = 7'b 0011000;
+		
+		
+		default:
+			seg = 7'b 1111111;
+	
+	
+	endcase
+
+end
+
+
+
+endmodule 

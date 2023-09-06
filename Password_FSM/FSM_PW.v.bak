@@ -1,0 +1,25 @@
+/*
+
+
+	Maquina de estados Finita, para simular un sistema de contraseña
+	Entradas:
+			clk, rst_a, 4 bits para la contraseña
+	Salidas:
+			1, Pass
+*/
+
+
+module FSW_PW #(parameter Bits = 4)(
+
+	input 						clk,
+									rst_a,
+	input [Bits - 1 : 0] 	entrada_pw,
+	
+	output reg 					pass
+
+);
+
+
+
+
+endmodule 

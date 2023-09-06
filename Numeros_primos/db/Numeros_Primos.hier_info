@@ -1,0 +1,8 @@
+|NUMPRIMOS
+inputs[0] => Decoder0.IN3
+inputs[1] => Decoder0.IN2
+inputs[2] => Decoder0.IN1
+inputs[3] => Decoder0.IN0
+salida << WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+

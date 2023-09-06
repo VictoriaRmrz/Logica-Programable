@@ -1,0 +1,16 @@
+
+State Machine - |wrapper|FSM_with_debouncer:WRAPPER|FSM_PW:MAQUINA_ESTADOS|next_state
+Name next_state.STATE_3 next_state.STATE_2 next_state.STATE_1 next_state.STATE_0 next_state.STATE_4 
+next_state.STATE_0 0 0 0 0 0 
+next_state.STATE_1 0 0 1 1 0 
+next_state.STATE_2 0 1 0 1 0 
+next_state.STATE_3 1 0 0 1 0 
+next_state.STATE_4 0 0 0 1 1 
+
+State Machine - |wrapper|FSM_with_debouncer:WRAPPER|FSM_PW:MAQUINA_ESTADOS|current_state
+Name current_state.STATE_3 current_state.STATE_2 current_state.STATE_1 current_state.STATE_0 current_state.STATE_4 
+current_state.STATE_0 0 0 0 0 0 
+current_state.STATE_1 0 0 1 1 0 
+current_state.STATE_2 0 1 0 1 0 
+current_state.STATE_3 1 0 0 1 0 
+current_state.STATE_4 0 0 0 1 1 

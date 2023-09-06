@@ -1,0 +1,89 @@
+# Reading pref.tcl
+# do TransmisorReceptor_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/victo/OneDrive/Escritorio/Escuela\ Victoria/Universidad/Logica\ Programable/7\ segmentos {C:/Users/victo/OneDrive/Escritorio/Escuela Victoria/Universidad/Logica Programable/7 segmentos/seven7.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 09:09:02 on Mar 14,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/victo/OneDrive/Escritorio/Escuela Victoria/Universidad/Logica Programable/7 segmentos" C:/Users/victo/OneDrive/Escritorio/Escuela Victoria/Universidad/Logica Programable/7 segmentos/seven7.v 
+# -- Compiling module seven7
+# 
+# Top level modules:
+# 	seven7
+# End time: 09:09:02 on Mar 14,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/victo/OneDrive/Escritorio/Escuela\ Victoria/Universidad/Logica\ Programable/Transmisor-Receptor/TrasmisorReceptor {C:/Users/victo/OneDrive/Escritorio/Escuela Victoria/Universidad/Logica Programable/Transmisor-Receptor/TrasmisorReceptor/Receptor.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 09:09:02 on Mar 14,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/victo/OneDrive/Escritorio/Escuela Victoria/Universidad/Logica Programable/Transmisor-Receptor/TrasmisorReceptor" C:/Users/victo/OneDrive/Escritorio/Escuela Victoria/Universidad/Logica Programable/Transmisor-Receptor/TrasmisorReceptor/Receptor.v 
+# -- Compiling module Receptor
+# 
+# Top level modules:
+# 	Receptor
+# End time: 09:09:02 on Mar 14,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/victo/OneDrive/Escritorio/Escuela\ Victoria/Universidad/Logica\ Programable/Transmisor-Receptor/TrasmisorReceptor {C:/Users/victo/OneDrive/Escritorio/Escuela Victoria/Universidad/Logica Programable/Transmisor-Receptor/TrasmisorReceptor/Transmisor.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 09:09:02 on Mar 14,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/victo/OneDrive/Escritorio/Escuela Victoria/Universidad/Logica Programable/Transmisor-Receptor/TrasmisorReceptor" C:/Users/victo/OneDrive/Escritorio/Escuela Victoria/Universidad/Logica Programable/Transmisor-Receptor/TrasmisorReceptor/Transmisor.v 
+# -- Compiling module Transmisor
+# 
+# Top level modules:
+# 	Transmisor
+# End time: 09:09:03 on Mar 14,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/victo/OneDrive/Escritorio/Escuela\ Victoria/Universidad/Logica\ Programable/Transmisor-Receptor/TrasmisorReceptor {C:/Users/victo/OneDrive/Escritorio/Escuela Victoria/Universidad/Logica Programable/Transmisor-Receptor/TrasmisorReceptor/TOP.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 09:09:03 on Mar 14,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/victo/OneDrive/Escritorio/Escuela Victoria/Universidad/Logica Programable/Transmisor-Receptor/TrasmisorReceptor" C:/Users/victo/OneDrive/Escritorio/Escuela Victoria/Universidad/Logica Programable/Transmisor-Receptor/TrasmisorReceptor/TOP.v 
+# -- Compiling module TOP
+# 
+# Top level modules:
+# 	TOP
+# End time: 09:09:03 on Mar 14,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/victo/OneDrive/Escritorio/Escuela\ Victoria/Universidad/Logica\ Programable/Transmisor-Receptor/TrasmisorReceptor {C:/Users/victo/OneDrive/Escritorio/Escuela Victoria/Universidad/Logica Programable/Transmisor-Receptor/TrasmisorReceptor/uart_tb.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 09:09:03 on Mar 14,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/victo/OneDrive/Escritorio/Escuela Victoria/Universidad/Logica Programable/Transmisor-Receptor/TrasmisorReceptor" C:/Users/victo/OneDrive/Escritorio/Escuela Victoria/Universidad/Logica Programable/Transmisor-Receptor/TrasmisorReceptor/uart_tb.v 
+# -- Compiling module uart_tb
+# 
+# Top level modules:
+# 	uart_tb
+# End time: 09:09:03 on Mar 14,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs="+acc"  uart_tb
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs=""+acc"" uart_tb 
+# Start time: 09:09:03 on Mar 14,2023
+# Loading work.uart_tb
+# Loading work.TOP
+# Loading work.Transmisor
+# Loading work.Receptor
+# Loading work.seven7
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'TOP'.  Expected 11, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /uart_tb/TOP File: C:/Users/victo/OneDrive/Escritorio/Escuela Victoria/Universidad/Logica Programable/Transmisor-Receptor/TrasmisorReceptor/uart_tb.v Line: 12
+# ** Warning: (vsim-3722) C:/Users/victo/OneDrive/Escritorio/Escuela Victoria/Universidad/Logica Programable/Transmisor-Receptor/TrasmisorReceptor/uart_tb.v(12): [TFMPC] - Missing connection for port 'seg1'.
+# ** Warning: (vsim-3722) C:/Users/victo/OneDrive/Escritorio/Escuela Victoria/Universidad/Logica Programable/Transmisor-Receptor/TrasmisorReceptor/uart_tb.v(12): [TFMPC] - Missing connection for port 'seg2'.
+# ** Warning: (vsim-3722) C:/Users/victo/OneDrive/Escritorio/Escuela Victoria/Universidad/Logica Programable/Transmisor-Receptor/TrasmisorReceptor/uart_tb.v(12): [TFMPC] - Missing connection for port 'seg3'.
+# ** Warning: (vsim-3722) C:/Users/victo/OneDrive/Escritorio/Escuela Victoria/Universidad/Logica Programable/Transmisor-Receptor/TrasmisorReceptor/uart_tb.v(12): [TFMPC] - Missing connection for port 'seg4'.
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# Break key hit
+# Break in Module uart_tb at C:/Users/victo/OneDrive/Escritorio/Escuela Victoria/Universidad/Logica Programable/Transmisor-Receptor/TrasmisorReceptor/uart_tb.v line 23
+# End time: 09:09:20 on Mar 14,2023, Elapsed time: 0:00:17
+# Errors: 0, Warnings: 5

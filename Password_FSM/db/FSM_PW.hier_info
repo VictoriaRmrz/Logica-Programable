@@ -1,0 +1,188 @@
+|wrapper
+SW[0] => SW[0].IN1
+SW[1] => SW[1].IN1
+SW[2] => SW[2].IN1
+SW[3] => SW[3].IN1
+SW[4] => ~NO_FANOUT~
+SW[5] => ~NO_FANOUT~
+SW[6] => ~NO_FANOUT~
+SW[7] => ~NO_FANOUT~
+SW[8] => ~NO_FANOUT~
+SW[9] => SW[9].IN1
+MAX10_CLK1_50 => MAX10_CLK1_50.IN1
+KEY[0] => KEY[0].IN1
+KEY[1] => ~NO_FANOUT~
+HEX0[0] << FSM_with_debouncer:WRAPPER.salidas_pass
+HEX0[1] << FSM_with_debouncer:WRAPPER.salidas_pass
+HEX0[2] << FSM_with_debouncer:WRAPPER.salidas_pass
+HEX0[3] << FSM_with_debouncer:WRAPPER.salidas_pass
+HEX0[4] << FSM_with_debouncer:WRAPPER.salidas_pass
+HEX0[5] << FSM_with_debouncer:WRAPPER.salidas_pass
+HEX0[6] << FSM_with_debouncer:WRAPPER.salidas_pass
+HEX1[0] << FSM_with_debouncer:WRAPPER.salidas_estado
+HEX1[1] << FSM_with_debouncer:WRAPPER.salidas_estado
+HEX1[2] << FSM_with_debouncer:WRAPPER.salidas_estado
+HEX1[3] << FSM_with_debouncer:WRAPPER.salidas_estado
+HEX1[4] << FSM_with_debouncer:WRAPPER.salidas_estado
+HEX1[5] << FSM_with_debouncer:WRAPPER.salidas_estado
+HEX1[6] << FSM_with_debouncer:WRAPPER.salidas_estado
+LEDR[0] << FSM_with_debouncer:WRAPPER.pass_led
+LEDR[1] << <GND>
+LEDR[2] << <GND>
+LEDR[3] << <GND>
+LEDR[4] << <GND>
+LEDR[5] << <GND>
+LEDR[6] << <GND>
+LEDR[7] << <GND>
+LEDR[8] << <GND>
+LEDR[9] << FSM_with_debouncer:WRAPPER.debouncer_led
+
+
+|wrapper|FSM_with_debouncer:WRAPPER
+clk => clk.IN2
+rst_a => rst_a.IN2
+enable_data => enable_data.IN1
+entradas[0] => entradas[0].IN2
+entradas[1] => entradas[1].IN2
+entradas[2] => entradas[2].IN2
+entradas[3] => entradas[3].IN2
+salidas_estado[0] <= seven7:DISPLAY_ESTADOS.seg
+salidas_estado[1] <= seven7:DISPLAY_ESTADOS.seg
+salidas_estado[2] <= seven7:DISPLAY_ESTADOS.seg
+salidas_estado[3] <= seven7:DISPLAY_ESTADOS.seg
+salidas_estado[4] <= seven7:DISPLAY_ESTADOS.seg
+salidas_estado[5] <= seven7:DISPLAY_ESTADOS.seg
+salidas_estado[6] <= seven7:DISPLAY_ESTADOS.seg
+salidas_pass[0] <= seven7:DISPLAY_PASSWORD.seg
+salidas_pass[1] <= seven7:DISPLAY_PASSWORD.seg
+salidas_pass[2] <= seven7:DISPLAY_PASSWORD.seg
+salidas_pass[3] <= seven7:DISPLAY_PASSWORD.seg
+salidas_pass[4] <= seven7:DISPLAY_PASSWORD.seg
+salidas_pass[5] <= seven7:DISPLAY_PASSWORD.seg
+salidas_pass[6] <= seven7:DISPLAY_PASSWORD.seg
+pass_led <= FSM_PW:MAQUINA_ESTADOS.pass
+debouncer_led <= FSM_PW:MAQUINA_ESTADOS.estado_debouncer
+
+
+|wrapper|FSM_with_debouncer:WRAPPER|debouncer:DEB
+p_b => p_b.IN1
+clk => clk.IN1
+rst_a => rst_a.IN2
+p_b_debouncer <= ff_d:REGISTRO_GUARDAR.q_out
+
+
+|wrapper|FSM_with_debouncer:WRAPPER|debouncer:DEB|counterDebouncer:CONTEO_DEBOUNCER
+clk => flag_check~reg0.CLK
+clk => counter_reg_aux[0].CLK
+clk => counter_reg_aux[1].CLK
+clk => counter_reg_aux[2].CLK
+clk => counter_reg_aux[3].CLK
+clk => counter_reg_aux[4].CLK
+clk => counter_reg_aux[5].CLK
+clk => counter_reg_aux[6].CLK
+clk => counter_reg_aux[7].CLK
+clk => counter_reg_aux[8].CLK
+clk => counter_reg_aux[9].CLK
+clk => counter_reg_aux[10].CLK
+clk => counter_reg_aux[11].CLK
+clk => counter_reg_aux[12].CLK
+clk => counter_reg_aux[13].CLK
+clk => counter_reg_aux[14].CLK
+clk => counter_reg_aux[15].CLK
+clk => counter_reg_aux[16].CLK
+clk => counter_reg_aux[17].CLK
+clk => counter_reg_aux[18].CLK
+rst_a => flag_check~reg0.ACLR
+rst_a => counter_reg_aux[0].ACLR
+rst_a => counter_reg_aux[1].ACLR
+rst_a => counter_reg_aux[2].ACLR
+rst_a => counter_reg_aux[3].ACLR
+rst_a => counter_reg_aux[4].ACLR
+rst_a => counter_reg_aux[5].ACLR
+rst_a => counter_reg_aux[6].ACLR
+rst_a => counter_reg_aux[7].ACLR
+rst_a => counter_reg_aux[8].ACLR
+rst_a => counter_reg_aux[9].ACLR
+rst_a => counter_reg_aux[10].ACLR
+rst_a => counter_reg_aux[11].ACLR
+rst_a => counter_reg_aux[12].ACLR
+rst_a => counter_reg_aux[13].ACLR
+rst_a => counter_reg_aux[14].ACLR
+rst_a => counter_reg_aux[15].ACLR
+rst_a => counter_reg_aux[16].ACLR
+rst_a => counter_reg_aux[17].ACLR
+rst_a => counter_reg_aux[18].ACLR
+flag_check <= flag_check~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|wrapper|FSM_with_debouncer:WRAPPER|debouncer:DEB|ff_d:REGISTRO_GUARDAR
+clk => q_out[0]~reg0.CLK
+rst_a => q_out[0]~reg0.ACLR
+d_in[0] => q_out[0]~reg0.DATAIN
+q_out[0] <= q_out[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|wrapper|FSM_with_debouncer:WRAPPER|FSM_PW:MAQUINA_ESTADOS
+clk => current_state~1.DATAIN
+rst_a => enable_posedge.ACLR
+rst_a => current_state~3.DATAIN
+enable_data => pass~reg0.CLK
+enable_data => enable_posedge.CLK
+enable_data => next_state~1.DATAIN
+entrada_pw[0] => Equal0.IN31
+entrada_pw[0] => Equal1.IN1
+entrada_pw[0] => Equal2.IN31
+entrada_pw[0] => Equal3.IN2
+entrada_pw[0] => Equal4.IN31
+entrada_pw[1] => Equal0.IN1
+entrada_pw[1] => Equal1.IN31
+entrada_pw[1] => Equal2.IN30
+entrada_pw[1] => Equal3.IN1
+entrada_pw[1] => Equal4.IN30
+entrada_pw[2] => Equal0.IN0
+entrada_pw[2] => Equal1.IN30
+entrada_pw[2] => Equal2.IN29
+entrada_pw[2] => Equal3.IN0
+entrada_pw[2] => Equal4.IN29
+entrada_pw[3] => Equal0.IN30
+entrada_pw[3] => Equal1.IN0
+entrada_pw[3] => Equal2.IN0
+entrada_pw[3] => Equal3.IN31
+entrada_pw[3] => Equal4.IN28
+pass <= pass~reg0.DB_MAX_OUTPUT_PORT_TYPE
+estado_led[0] <= estado_led.DB_MAX_OUTPUT_PORT_TYPE
+estado_led[1] <= estado_led.DB_MAX_OUTPUT_PORT_TYPE
+estado_led[2] <= estado_led[2].DB_MAX_OUTPUT_PORT_TYPE
+estado_debouncer[0] <= enable_posedge.DB_MAX_OUTPUT_PORT_TYPE
+estado_debouncer[1] <= <GND>
+estado_debouncer[2] <= <GND>
+
+
+|wrapper|FSM_with_debouncer:WRAPPER|seven7:DISPLAY_ESTADOS
+bcd[0] => Decoder0.IN3
+bcd[1] => Decoder0.IN2
+bcd[2] => Decoder0.IN1
+bcd[3] => Decoder0.IN0
+seg[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+seg[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+seg[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+seg[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+seg[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+seg[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+seg[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|wrapper|FSM_with_debouncer:WRAPPER|seven7:DISPLAY_PASSWORD
+bcd[0] => Decoder0.IN3
+bcd[1] => Decoder0.IN2
+bcd[2] => Decoder0.IN1
+bcd[3] => Decoder0.IN0
+seg[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+seg[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+seg[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+seg[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+seg[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+seg[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+seg[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+

@@ -1,0 +1,51 @@
+# Reading pref.tcl
+# do Adder_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/victo/OneDrive/Escritorio/Escuela\ Victoria/Universidad/Logica\ Programable/Decodificador/Adder {C:/Users/victo/OneDrive/Escritorio/Escuela Victoria/Universidad/Logica Programable/Decodificador/Adder/adder.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:20:06 on Feb 20,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/victo/OneDrive/Escritorio/Escuela Victoria/Universidad/Logica Programable/Decodificador/Adder" C:/Users/victo/OneDrive/Escritorio/Escuela Victoria/Universidad/Logica Programable/Decodificador/Adder/adder.v 
+# -- Compiling module adder
+# 
+# Top level modules:
+# 	adder
+# End time: 12:20:06 on Feb 20,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/victo/OneDrive/Escritorio/Escuela\ Victoria/Universidad/Logica\ Programable/Decodificador/Adder {C:/Users/victo/OneDrive/Escritorio/Escuela Victoria/Universidad/Logica Programable/Decodificador/Adder/adder_tb.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:20:06 on Feb 20,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/victo/OneDrive/Escritorio/Escuela Victoria/Universidad/Logica Programable/Decodificador/Adder" C:/Users/victo/OneDrive/Escritorio/Escuela Victoria/Universidad/Logica Programable/Decodificador/Adder/adder_tb.v 
+# -- Compiling module adder_tb
+# 
+# Top level modules:
+# 	adder_tb
+# End time: 12:20:06 on Feb 20,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs="+acc"  adder_tb
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs=""+acc"" adder_tb 
+# Start time: 12:20:07 on Feb 20,2023
+# Loading work.adder_tb
+# Loading work.adder
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# ** Note: $stop    : C:/Users/victo/OneDrive/Escritorio/Escuela Victoria/Universidad/Logica Programable/Decodificador/Adder/adder_tb.v(33)
+#    Time: 400 ps  Iteration: 0  Instance: /adder_tb
+# Break in Module adder_tb at C:/Users/victo/OneDrive/Escritorio/Escuela Victoria/Universidad/Logica Programable/Decodificador/Adder/adder_tb.v line 33
+# End time: 12:25:44 on Feb 20,2023, Elapsed time: 0:05:37
+# Errors: 0, Warnings: 0

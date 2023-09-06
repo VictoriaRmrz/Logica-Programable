@@ -1,0 +1,16 @@
+module ContadorWithDebouncer_wrapper #(parameter C_MAX = 500000)(
+	input [9:0] SW,
+	input MAX10_CLK1_50,
+	input [1:0] KEY,
+	output [9:0] LEDR
+);
+
+ContadorWithDebouncer WRAPPER(
+	.p_b(SW[9]),
+	.clk(MAX10_CLK1_50),
+	.rst_a(KEY[0]),
+	.entradas(SW[3:]),
+	.salidas(LEDR[3:0])
+);
+
+endmodule

@@ -1,0 +1,131 @@
+|ContadorWithDebouncer_wrapper
+SW[0] => SW[0].IN1
+SW[1] => SW[1].IN1
+SW[2] => SW[2].IN1
+SW[3] => SW[3].IN1
+SW[4] => SW[4].IN1
+SW[5] => ~NO_FANOUT~
+SW[6] => ~NO_FANOUT~
+SW[7] => ~NO_FANOUT~
+SW[8] => ~NO_FANOUT~
+SW[9] => ~NO_FANOUT~
+MAX10_CLK1_50 => MAX10_CLK1_50.IN1
+KEY[0] => KEY[0].IN1
+KEY[1] => ~NO_FANOUT~
+HEX0[0] << ContadorWithDebouncer:WRAPPER.salidas
+HEX0[1] << ContadorWithDebouncer:WRAPPER.salidas
+HEX0[2] << ContadorWithDebouncer:WRAPPER.salidas
+HEX0[3] << ContadorWithDebouncer:WRAPPER.salidas
+HEX0[4] << ContadorWithDebouncer:WRAPPER.salidas
+HEX0[5] << ContadorWithDebouncer:WRAPPER.salidas
+HEX0[6] << ContadorWithDebouncer:WRAPPER.salidas
+
+
+|ContadorWithDebouncer_wrapper|ContadorWithDebouncer:WRAPPER
+clk => clk.IN1
+rst_a => rst_a.IN2
+p_b => p_b.IN1
+entradas[0] => entradas[0].IN1
+entradas[1] => entradas[1].IN1
+entradas[2] => entradas[2].IN1
+entradas[3] => entradas[3].IN1
+salidas[0] <= seven7:DISPLAY.seg
+salidas[1] <= seven7:DISPLAY.seg
+salidas[2] <= seven7:DISPLAY.seg
+salidas[3] <= seven7:DISPLAY.seg
+salidas[4] <= seven7:DISPLAY.seg
+salidas[5] <= seven7:DISPLAY.seg
+salidas[6] <= seven7:DISPLAY.seg
+
+
+|ContadorWithDebouncer_wrapper|ContadorWithDebouncer:WRAPPER|debouncer:DEB
+p_b => p_b.IN1
+clk => clk.IN1
+rst_a => rst_a.IN2
+p_b_debouncer <= ff_d:REGISTRO_GUARDAR.q_out
+
+
+|ContadorWithDebouncer_wrapper|ContadorWithDebouncer:WRAPPER|debouncer:DEB|counterDebouncer:CONTEO_DEBOUNCER
+clk => flag_check~reg0.CLK
+clk => counter_reg_aux[0].CLK
+clk => counter_reg_aux[1].CLK
+clk => counter_reg_aux[2].CLK
+clk => counter_reg_aux[3].CLK
+clk => counter_reg_aux[4].CLK
+clk => counter_reg_aux[5].CLK
+clk => counter_reg_aux[6].CLK
+clk => counter_reg_aux[7].CLK
+clk => counter_reg_aux[8].CLK
+clk => counter_reg_aux[9].CLK
+clk => counter_reg_aux[10].CLK
+clk => counter_reg_aux[11].CLK
+clk => counter_reg_aux[12].CLK
+clk => counter_reg_aux[13].CLK
+clk => counter_reg_aux[14].CLK
+clk => counter_reg_aux[15].CLK
+clk => counter_reg_aux[16].CLK
+clk => counter_reg_aux[17].CLK
+clk => counter_reg_aux[18].CLK
+rst_a => flag_check~reg0.ACLR
+rst_a => counter_reg_aux[0].ACLR
+rst_a => counter_reg_aux[1].ACLR
+rst_a => counter_reg_aux[2].ACLR
+rst_a => counter_reg_aux[3].ACLR
+rst_a => counter_reg_aux[4].ACLR
+rst_a => counter_reg_aux[5].ACLR
+rst_a => counter_reg_aux[6].ACLR
+rst_a => counter_reg_aux[7].ACLR
+rst_a => counter_reg_aux[8].ACLR
+rst_a => counter_reg_aux[9].ACLR
+rst_a => counter_reg_aux[10].ACLR
+rst_a => counter_reg_aux[11].ACLR
+rst_a => counter_reg_aux[12].ACLR
+rst_a => counter_reg_aux[13].ACLR
+rst_a => counter_reg_aux[14].ACLR
+rst_a => counter_reg_aux[15].ACLR
+rst_a => counter_reg_aux[16].ACLR
+rst_a => counter_reg_aux[17].ACLR
+rst_a => counter_reg_aux[18].ACLR
+flag_check <= flag_check~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ContadorWithDebouncer_wrapper|ContadorWithDebouncer:WRAPPER|debouncer:DEB|ff_d:REGISTRO_GUARDAR
+clk => q_out[0]~reg0.CLK
+rst_a => q_out[0]~reg0.ACLR
+d_in[0] => q_out[0]~reg0.DATAIN
+q_out[0] <= q_out[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ContadorWithDebouncer_wrapper|ContadorWithDebouncer:WRAPPER|contador:COUNTER
+clk => counter_out[0]~reg0.CLK
+clk => counter_out[1]~reg0.CLK
+clk => counter_out[2]~reg0.CLK
+clk => counter_out[3]~reg0.CLK
+rst => counter_out[0]~reg0.ACLR
+rst => counter_out[1]~reg0.ACLR
+rst => counter_out[2]~reg0.ACLR
+rst => counter_out[3]~reg0.ACLR
+c_max[0] => LessThan0.IN4
+c_max[1] => LessThan0.IN3
+c_max[2] => LessThan0.IN2
+c_max[3] => LessThan0.IN1
+counter_out[0] <= counter_out[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+counter_out[1] <= counter_out[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+counter_out[2] <= counter_out[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+counter_out[3] <= counter_out[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ContadorWithDebouncer_wrapper|ContadorWithDebouncer:WRAPPER|seven7:DISPLAY
+bcd[0] => Decoder0.IN3
+bcd[1] => Decoder0.IN2
+bcd[2] => Decoder0.IN1
+bcd[3] => Decoder0.IN0
+seg[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+seg[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+seg[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+seg[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+seg[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+seg[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+seg[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+

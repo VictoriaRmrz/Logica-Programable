@@ -1,0 +1,206 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/victo/OneDrive/Escritorio/Escuela Victoria/Universidad/Logica Programable/Debouncer/simulation/modelsim
+vcontador
+Z1 !s110 1677680523
+!i10b 1
+!s100 C4]PB@zL`Ul`Y9jZ0CG:R3
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+InoXU`ES=Y@nm[7CB3`KZo3
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1677680417
+8C:/Users/victo/OneDrive/Escritorio/Escuela Victoria/Universidad/Logica Programable/Contador con clk/contador.v
+FC:/Users/victo/OneDrive/Escritorio/Escuela Victoria/Universidad/Logica Programable/Contador con clk/contador.v
+!i122 0
+L0 1 25
+Z4 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z5 !s108 1677680523.000000
+!s107 C:/Users/victo/OneDrive/Escritorio/Escuela Victoria/Universidad/Logica Programable/Contador con clk/contador.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/victo/OneDrive/Escritorio/Escuela Victoria/Universidad/Logica Programable/Contador con clk|C:/Users/victo/OneDrive/Escritorio/Escuela Victoria/Universidad/Logica Programable/Contador con clk/contador.v|
+!i113 1
+Z6 o-vlog01compat -work work
+!s92 -vlog01compat -work work {+incdir+C:/Users/victo/OneDrive/Escritorio/Escuela Victoria/Universidad/Logica Programable/Contador con clk}
+Z7 tCvgOpt 0
+vcontador_tb
+R1
+!i10b 1
+!s100 5JNTD`7;_IJ8^YDQ<Q2[a2
+R2
+Im1zj?alDjK<OQg=UKdMa62
+R3
+R0
+w1677680493
+8C:/Users/victo/OneDrive/Escritorio/Escuela Victoria/Universidad/Logica Programable/Debouncer/../Contador con clk/contador_tb.v
+FC:/Users/victo/OneDrive/Escritorio/Escuela Victoria/Universidad/Logica Programable/Debouncer/../Contador con clk/contador_tb.v
+!i122 7
+L0 1 34
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/victo/OneDrive/Escritorio/Escuela Victoria/Universidad/Logica Programable/Debouncer/../Contador con clk/contador_tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/victo/OneDrive/Escritorio/Escuela Victoria/Universidad/Logica Programable/Debouncer/../Contador con clk|C:/Users/victo/OneDrive/Escritorio/Escuela Victoria/Universidad/Logica Programable/Debouncer/../Contador con clk/contador_tb.v|
+!i113 1
+R6
+!s92 -vlog01compat -work work {+incdir+C:/Users/victo/OneDrive/Escritorio/Escuela Victoria/Universidad/Logica Programable/Debouncer/../Contador con clk}
+R7
+vContadorWithDebouncer
+R1
+!i10b 1
+!s100 YAWhfCSO>b;nh?`d1EibG3
+R2
+IzCk1LkW;jGZ^mZ1ge:6^X1
+R3
+R0
+w1677252476
+8C:/Users/victo/OneDrive/Escritorio/Escuela Victoria/Universidad/Logica Programable/Debouncer/ContadorWithDebouncer.v
+FC:/Users/victo/OneDrive/Escritorio/Escuela Victoria/Universidad/Logica Programable/Debouncer/ContadorWithDebouncer.v
+!i122 5
+Z8 L0 1 30
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/victo/OneDrive/Escritorio/Escuela Victoria/Universidad/Logica Programable/Debouncer/ContadorWithDebouncer.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/victo/OneDrive/Escritorio/Escuela Victoria/Universidad/Logica Programable/Debouncer|C:/Users/victo/OneDrive/Escritorio/Escuela Victoria/Universidad/Logica Programable/Debouncer/ContadorWithDebouncer.v|
+!i113 1
+R6
+Z9 !s92 -vlog01compat -work work {+incdir+C:/Users/victo/OneDrive/Escritorio/Escuela Victoria/Universidad/Logica Programable/Debouncer}
+R7
+n@contador@with@debouncer
+vContadorWithDebouncer_wrapper
+R1
+!i10b 1
+!s100 Yj3S>[Kb615kI<CO`haXH1
+R2
+I@:0OcQ<Y[<6UF7HAXT7=91
+R3
+R0
+w1677084977
+8C:/Users/victo/OneDrive/Escritorio/Escuela Victoria/Universidad/Logica Programable/Debouncer/ContadorWithDebouncer_wrapper.v
+FC:/Users/victo/OneDrive/Escritorio/Escuela Victoria/Universidad/Logica Programable/Debouncer/ContadorWithDebouncer_wrapper.v
+!i122 6
+L0 1 17
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/victo/OneDrive/Escritorio/Escuela Victoria/Universidad/Logica Programable/Debouncer/ContadorWithDebouncer_wrapper.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/victo/OneDrive/Escritorio/Escuela Victoria/Universidad/Logica Programable/Debouncer|C:/Users/victo/OneDrive/Escritorio/Escuela Victoria/Universidad/Logica Programable/Debouncer/ContadorWithDebouncer_wrapper.v|
+!i113 1
+R6
+R9
+R7
+n@contador@with@debouncer_wrapper
+vcounterDebouncer
+R1
+!i10b 1
+!s100 ^CmOJinIAZ`0Q[P:OH8NC2
+R2
+INoeG;T?`^Ebc[BR@T:Hc63
+R3
+R0
+w1677599632
+8C:/Users/victo/OneDrive/Escritorio/Escuela Victoria/Universidad/Logica Programable/Debouncer/counterDebouncer.v
+FC:/Users/victo/OneDrive/Escritorio/Escuela Victoria/Universidad/Logica Programable/Debouncer/counterDebouncer.v
+!i122 4
+R8
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/victo/OneDrive/Escritorio/Escuela Victoria/Universidad/Logica Programable/Debouncer/counterDebouncer.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/victo/OneDrive/Escritorio/Escuela Victoria/Universidad/Logica Programable/Debouncer|C:/Users/victo/OneDrive/Escritorio/Escuela Victoria/Universidad/Logica Programable/Debouncer/counterDebouncer.v|
+!i113 1
+R6
+R9
+R7
+ncounter@debouncer
+vdebouncer
+R1
+!i10b 1
+!s100 ecQh>:J<DniNi1]OMSnF31
+R2
+IYV^:UFBVZcz[>mQF0BI?<2
+R3
+R0
+w1677592460
+8C:/Users/victo/OneDrive/Escritorio/Escuela Victoria/Universidad/Logica Programable/Debouncer/debouncer.v
+FC:/Users/victo/OneDrive/Escritorio/Escuela Victoria/Universidad/Logica Programable/Debouncer/debouncer.v
+!i122 2
+L0 2 23
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/victo/OneDrive/Escritorio/Escuela Victoria/Universidad/Logica Programable/Debouncer/debouncer.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/victo/OneDrive/Escritorio/Escuela Victoria/Universidad/Logica Programable/Debouncer|C:/Users/victo/OneDrive/Escritorio/Escuela Victoria/Universidad/Logica Programable/Debouncer/debouncer.v|
+!i113 1
+R6
+R9
+R7
+vff_d
+R1
+!i10b 1
+!s100 6dFS?e[?IXVNcPm6`e;;_1
+R2
+IIbe[Z?8^EXI92K171DV9g1
+R3
+R0
+w1677076259
+8C:/Users/victo/OneDrive/Escritorio/Escuela Victoria/Universidad/Logica Programable/Debouncer/ff_d.v
+FC:/Users/victo/OneDrive/Escritorio/Escuela Victoria/Universidad/Logica Programable/Debouncer/ff_d.v
+!i122 3
+L0 1 14
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/victo/OneDrive/Escritorio/Escuela Victoria/Universidad/Logica Programable/Debouncer/ff_d.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/victo/OneDrive/Escritorio/Escuela Victoria/Universidad/Logica Programable/Debouncer|C:/Users/victo/OneDrive/Escritorio/Escuela Victoria/Universidad/Logica Programable/Debouncer/ff_d.v|
+!i113 1
+R6
+R9
+R7
+vseven7
+R1
+!i10b 1
+!s100 c39YcBK2^1K7NB4hZ3B<20
+R2
+IcZ>UDG:44ULbXDcLP>nOS1
+R3
+R0
+w1676904113
+8C:/Users/victo/OneDrive/Escritorio/Escuela Victoria/Universidad/Logica Programable/7 segmentos/seven7.v
+FC:/Users/victo/OneDrive/Escritorio/Escuela Victoria/Universidad/Logica Programable/7 segmentos/seven7.v
+!i122 1
+L0 1 42
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/victo/OneDrive/Escritorio/Escuela Victoria/Universidad/Logica Programable/7 segmentos/seven7.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/victo/OneDrive/Escritorio/Escuela Victoria/Universidad/Logica Programable/7 segmentos|C:/Users/victo/OneDrive/Escritorio/Escuela Victoria/Universidad/Logica Programable/7 segmentos/seven7.v|
+!i113 1
+R6
+!s92 -vlog01compat -work work {+incdir+C:/Users/victo/OneDrive/Escritorio/Escuela Victoria/Universidad/Logica Programable/7 segmentos}
+R7

@@ -1,0 +1,45 @@
+module FSM_sequence(
+	input 	clk, 
+				rst,
+	output [3:0] LEDR,
+);
+
+//Parameter	   s0 = 1111
+			// s1 = 1010
+			// s2 = 0101
+			// s3 = 0000
+			// s4 = 1010
+			// s5 = 1010
+
+
+reg [3:0] current, next;	// del mismo tamaño que la salida
+
+//ALWAYS PARA ASIGNACION DEL SIG. ESTADO
+always @(posedge clk or negedge rst)
+begin
+	if (!rst)	
+		current <= state0;
+	else
+		current <= next;
+end
+
+//ALWAYS PARA EL CAMBIO
+always @(current)
+begin
+case(current)
+	state0:
+		next == state1;
+	state1: 
+		next == state2;
+	state2:
+		next == state3;
+	state3:
+		next == state4;
+	state4:
+		next == state5;
+	state5:
+		next == state0;
+	default
+		next = state0;
+end
+endmodule

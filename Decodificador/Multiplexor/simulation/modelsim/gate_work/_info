@@ -1,0 +1,83 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/victo/OneDrive/Escritorio/Escuela Victoria/Universidad/Logica Programable/Decodificador/Multiplexor/simulation/modelsim
+vhard_block
+Z1 !s110 1676986669
+!i10b 1
+!s100 7M:W7QGEm<_T?m;zEGKdk3
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+I9DKSR5NE`hGbfMmE^KWB73
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z4 w1676986664
+Z5 8Multiplexor.vo
+Z6 FMultiplexor.vo
+!i122 0
+L0 246 45
+Z7 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z8 !s108 1676986669.000000
+Z9 !s107 Multiplexor.vo|
+Z10 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+.|Multiplexor.vo|
+!i113 1
+Z11 o-vlog01compat -work work
+Z12 !s92 -vlog01compat -work work +incdir+.
+Z13 tCvgOpt 0
+vmux
+R1
+!i10b 1
+!s100 lGkgoE]=O;ok@RMU=Cco21
+R2
+IPlV7J0oeUfM`daE32HOcJ0
+R3
+R0
+R4
+R5
+R6
+!i122 0
+L0 32 213
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+R13
+vmux_tb
+!s110 1676986670
+!i10b 1
+!s100 `5zG7J_h`oNNa]3jAeYgK2
+R2
+IZDHzZ=jE9XS`^FBl9zRR20
+R3
+R0
+w1676915269
+8C:/Users/victo/OneDrive/Escritorio/Escuela Victoria/Universidad/Logica Programable/Decodificador/Multiplexor/mux_tb.v
+FC:/Users/victo/OneDrive/Escritorio/Escuela Victoria/Universidad/Logica Programable/Decodificador/Multiplexor/mux_tb.v
+!i122 1
+L0 1 40
+R7
+r1
+!s85 0
+31
+R8
+!s107 C:/Users/victo/OneDrive/Escritorio/Escuela Victoria/Universidad/Logica Programable/Decodificador/Multiplexor/mux_tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/victo/OneDrive/Escritorio/Escuela Victoria/Universidad/Logica Programable/Decodificador/Multiplexor|C:/Users/victo/OneDrive/Escritorio/Escuela Victoria/Universidad/Logica Programable/Decodificador/Multiplexor/mux_tb.v|
+!i113 1
+R11
+!s92 -vlog01compat -work work {+incdir+C:/Users/victo/OneDrive/Escritorio/Escuela Victoria/Universidad/Logica Programable/Decodificador/Multiplexor}
+R13

@@ -1,0 +1,90 @@
+# Reading pref.tcl
+# do ClockDivider_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/victo/OneDrive/Escritorio/Escuela\ Victoria/Universidad/Logica\ Programable/7\ segmentos {C:/Users/victo/OneDrive/Escritorio/Escuela Victoria/Universidad/Logica Programable/7 segmentos/seven7.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 07:41:30 on Mar 02,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/victo/OneDrive/Escritorio/Escuela Victoria/Universidad/Logica Programable/7 segmentos" C:/Users/victo/OneDrive/Escritorio/Escuela Victoria/Universidad/Logica Programable/7 segmentos/seven7.v 
+# -- Compiling module seven7
+# 
+# Top level modules:
+# 	seven7
+# End time: 07:41:30 on Mar 02,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/victo/OneDrive/Escritorio/Escuela\ Victoria/Universidad/Logica\ Programable/Contador\ con\ clk {C:/Users/victo/OneDrive/Escritorio/Escuela Victoria/Universidad/Logica Programable/Contador con clk/contador.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 07:41:30 on Mar 02,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/victo/OneDrive/Escritorio/Escuela Victoria/Universidad/Logica Programable/Contador con clk" C:/Users/victo/OneDrive/Escritorio/Escuela Victoria/Universidad/Logica Programable/Contador con clk/contador.v 
+# -- Compiling module contador
+# 
+# Top level modules:
+# 	contador
+# End time: 07:41:30 on Mar 02,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/victo/OneDrive/Escritorio/Escuela\ Victoria/Universidad/Logica\ Programable/Clock\ Divider {C:/Users/victo/OneDrive/Escritorio/Escuela Victoria/Universidad/Logica Programable/Clock Divider/clk_divider.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 07:41:30 on Mar 02,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/victo/OneDrive/Escritorio/Escuela Victoria/Universidad/Logica Programable/Clock Divider" C:/Users/victo/OneDrive/Escritorio/Escuela Victoria/Universidad/Logica Programable/Clock Divider/clk_divider.v 
+# -- Compiling module clk_divider
+# 
+# Top level modules:
+# 	clk_divider
+# End time: 07:41:31 on Mar 02,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/victo/OneDrive/Escritorio/Escuela\ Victoria/Universidad/Logica\ Programable/Clock\ Divider {C:/Users/victo/OneDrive/Escritorio/Escuela Victoria/Universidad/Logica Programable/Clock Divider/clk_div_with_7seven.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 07:41:31 on Mar 02,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/victo/OneDrive/Escritorio/Escuela Victoria/Universidad/Logica Programable/Clock Divider" C:/Users/victo/OneDrive/Escritorio/Escuela Victoria/Universidad/Logica Programable/Clock Divider/clk_div_with_7seven.v 
+# -- Compiling module clk_div_with_7seven
+# 
+# Top level modules:
+# 	clk_div_with_7seven
+# End time: 07:41:31 on Mar 02,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/victo/OneDrive/Escritorio/Escuela\ Victoria/Universidad/Logica\ Programable/Clock\ Divider {C:/Users/victo/OneDrive/Escritorio/Escuela Victoria/Universidad/Logica Programable/Clock Divider/wrapper.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 07:41:31 on Mar 02,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/victo/OneDrive/Escritorio/Escuela Victoria/Universidad/Logica Programable/Clock Divider" C:/Users/victo/OneDrive/Escritorio/Escuela Victoria/Universidad/Logica Programable/Clock Divider/wrapper.v 
+# -- Compiling module wrapper
+# 
+# Top level modules:
+# 	wrapper
+# End time: 07:41:31 on Mar 02,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/victo/OneDrive/Escritorio/Escuela\ Victoria/Universidad/Logica\ Programable/Clock\ Divider {C:/Users/victo/OneDrive/Escritorio/Escuela Victoria/Universidad/Logica Programable/Clock Divider/clk_divider_tb.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 07:41:31 on Mar 02,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/victo/OneDrive/Escritorio/Escuela Victoria/Universidad/Logica Programable/Clock Divider" C:/Users/victo/OneDrive/Escritorio/Escuela Victoria/Universidad/Logica Programable/Clock Divider/clk_divider_tb.v 
+# -- Compiling module clk_divider_tb
+# 
+# Top level modules:
+# 	clk_divider_tb
+# End time: 07:41:31 on Mar 02,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs="+acc"  clk_divider_tb
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs=""+acc"" clk_divider_tb 
+# Start time: 07:41:31 on Mar 02,2023
+# Loading work.clk_divider_tb
+# Loading work.clk_divider
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# Break key hit
+# Break in Module clk_divider_tb at C:/Users/victo/OneDrive/Escritorio/Escuela Victoria/Universidad/Logica Programable/Clock Divider/clk_divider_tb.v line 18
+# End time: 07:45:40 on Mar 02,2023, Elapsed time: 0:04:09
+# Errors: 0, Warnings: 0

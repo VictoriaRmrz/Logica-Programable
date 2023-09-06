@@ -1,0 +1,107 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/victo/OneDrive/Escritorio/Escuela Victoria/Universidad/Logica Programable/Decodificador/Adder_display/simulation/modelsim
+vadder
+Z1 !s110 1676901415
+!i10b 1
+!s100 [9`3R[J8Y756?`GON9O_e1
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+I]8j`@<@L0cnlNnkmZ8A110
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1676652318
+8C:/Users/victo/OneDrive/Escritorio/Escuela Victoria/Universidad/Logica Programable/Decodificador/Adder/adder.v
+FC:/Users/victo/OneDrive/Escritorio/Escuela Victoria/Universidad/Logica Programable/Decodificador/Adder/adder.v
+!i122 1
+L0 1 6
+Z4 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z5 !s108 1676901415.000000
+!s107 C:/Users/victo/OneDrive/Escritorio/Escuela Victoria/Universidad/Logica Programable/Decodificador/Adder/adder.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/victo/OneDrive/Escritorio/Escuela Victoria/Universidad/Logica Programable/Decodificador/Adder|C:/Users/victo/OneDrive/Escritorio/Escuela Victoria/Universidad/Logica Programable/Decodificador/Adder/adder.v|
+!i113 1
+Z6 o-vlog01compat -work work
+!s92 -vlog01compat -work work {+incdir+C:/Users/victo/OneDrive/Escritorio/Escuela Victoria/Universidad/Logica Programable/Decodificador/Adder}
+Z7 tCvgOpt 0
+vadder_display
+R1
+!i10b 1
+!s100 P9E;H<Hj5TFU7Bl?1P[GX0
+R2
+I5e3mjNV2M02Xji]cV5jYG0
+R3
+R0
+w1676682455
+8C:/Users/victo/OneDrive/Escritorio/Escuela Victoria/Universidad/Logica Programable/Decodificador/Adder_display/adder_display.v
+FC:/Users/victo/OneDrive/Escritorio/Escuela Victoria/Universidad/Logica Programable/Decodificador/Adder_display/adder_display.v
+!i122 2
+L0 1 12
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/victo/OneDrive/Escritorio/Escuela Victoria/Universidad/Logica Programable/Decodificador/Adder_display/adder_display.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/victo/OneDrive/Escritorio/Escuela Victoria/Universidad/Logica Programable/Decodificador/Adder_display|C:/Users/victo/OneDrive/Escritorio/Escuela Victoria/Universidad/Logica Programable/Decodificador/Adder_display/adder_display.v|
+!i113 1
+R6
+!s92 -vlog01compat -work work {+incdir+C:/Users/victo/OneDrive/Escritorio/Escuela Victoria/Universidad/Logica Programable/Decodificador/Adder_display}
+R7
+vadder_display_tb
+R1
+!i10b 1
+!s100 :k78;W1Y8@CPa4Q5FH[9E2
+R2
+I:ff=Eh`@`>I<o8SiNzeUh0
+R3
+R0
+w1676901304
+8C:/Users/victo/OneDrive/Escritorio/Escuela Victoria/Universidad/Logica Programable/Decodificador/Adder_display/output_files/adder_display_tb.v
+FC:/Users/victo/OneDrive/Escritorio/Escuela Victoria/Universidad/Logica Programable/Decodificador/Adder_display/output_files/adder_display_tb.v
+!i122 3
+L0 2 46
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/victo/OneDrive/Escritorio/Escuela Victoria/Universidad/Logica Programable/Decodificador/Adder_display/output_files/adder_display_tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/victo/OneDrive/Escritorio/Escuela Victoria/Universidad/Logica Programable/Decodificador/Adder_display/output_files|C:/Users/victo/OneDrive/Escritorio/Escuela Victoria/Universidad/Logica Programable/Decodificador/Adder_display/output_files/adder_display_tb.v|
+!i113 1
+R6
+!s92 -vlog01compat -work work {+incdir+C:/Users/victo/OneDrive/Escritorio/Escuela Victoria/Universidad/Logica Programable/Decodificador/Adder_display/output_files}
+R7
+vdec_display
+R1
+!i10b 1
+!s100 GV3`?BT]oeEf2dHozQ=Bk2
+R2
+I=FYCk?;iPX:H5oUT:lWM<2
+R3
+R0
+w1676652172
+8C:/Users/victo/OneDrive/Escritorio/Escuela Victoria/Universidad/Logica Programable/Decodificador/Display/dec_display.v
+FC:/Users/victo/OneDrive/Escritorio/Escuela Victoria/Universidad/Logica Programable/Decodificador/Display/dec_display.v
+!i122 0
+L0 1 13
+R4
+r1
+!s85 0
+31
+!s108 1676901414.000000
+!s107 C:/Users/victo/OneDrive/Escritorio/Escuela Victoria/Universidad/Logica Programable/Decodificador/Display/dec_display.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/victo/OneDrive/Escritorio/Escuela Victoria/Universidad/Logica Programable/Decodificador/Display|C:/Users/victo/OneDrive/Escritorio/Escuela Victoria/Universidad/Logica Programable/Decodificador/Display/dec_display.v|
+!i113 1
+R6
+!s92 -vlog01compat -work work {+incdir+C:/Users/victo/OneDrive/Escritorio/Escuela Victoria/Universidad/Logica Programable/Decodificador/Display}
+R7

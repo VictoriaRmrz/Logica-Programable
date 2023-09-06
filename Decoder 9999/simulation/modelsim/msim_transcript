@@ -1,0 +1,61 @@
+# Reading pref.tcl
+# do Decoder9999_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/victo/OneDrive/Escritorio/Escuela\ Victoria/Universidad/Logica\ Programable/Decoder\ 9999 {C:/Users/victo/OneDrive/Escritorio/Escuela Victoria/Universidad/Logica Programable/Decoder 9999/decoderSimple.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:55:34 on Feb 28,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/victo/OneDrive/Escritorio/Escuela Victoria/Universidad/Logica Programable/Decoder 9999" C:/Users/victo/OneDrive/Escritorio/Escuela Victoria/Universidad/Logica Programable/Decoder 9999/decoderSimple.v 
+# -- Compiling module decoderSimple
+# 
+# Top level modules:
+# 	decoderSimple
+# End time: 17:55:35 on Feb 28,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/victo/OneDrive/Escritorio/Escuela\ Victoria/Universidad/Logica\ Programable/Decoder\ 9999 {C:/Users/victo/OneDrive/Escritorio/Escuela Victoria/Universidad/Logica Programable/Decoder 9999/decoder9999.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:55:35 on Feb 28,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/victo/OneDrive/Escritorio/Escuela Victoria/Universidad/Logica Programable/Decoder 9999" C:/Users/victo/OneDrive/Escritorio/Escuela Victoria/Universidad/Logica Programable/Decoder 9999/decoder9999.v 
+# -- Compiling module decoder9999
+# 
+# Top level modules:
+# 	decoder9999
+# End time: 17:55:35 on Feb 28,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/victo/OneDrive/Escritorio/Escuela\ Victoria/Universidad/Logica\ Programable/Decoder\ 9999 {C:/Users/victo/OneDrive/Escritorio/Escuela Victoria/Universidad/Logica Programable/Decoder 9999/decoderSimple_tb.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:55:35 on Feb 28,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/victo/OneDrive/Escritorio/Escuela Victoria/Universidad/Logica Programable/Decoder 9999" C:/Users/victo/OneDrive/Escritorio/Escuela Victoria/Universidad/Logica Programable/Decoder 9999/decoderSimple_tb.v 
+# -- Compiling module decoderSimple_tb
+# 
+# Top level modules:
+# 	decoderSimple_tb
+# End time: 17:55:35 on Feb 28,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs="+acc"  decoderSimple_tb
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs=""+acc"" decoderSimple_tb 
+# Start time: 17:55:37 on Feb 28,2023
+# Loading work.decoderSimple_tb
+# Loading work.decoderSimple
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# ** Note: $stop    : C:/Users/victo/OneDrive/Escritorio/Escuela Victoria/Universidad/Logica Programable/Decoder 9999/decoderSimple_tb.v(41)
+#    Time: 1200 ps  Iteration: 0  Instance: /decoderSimple_tb
+# Break in Module decoderSimple_tb at C:/Users/victo/OneDrive/Escritorio/Escuela Victoria/Universidad/Logica Programable/Decoder 9999/decoderSimple_tb.v line 41
+# End time: 17:55:52 on Feb 28,2023, Elapsed time: 0:00:15
+# Errors: 0, Warnings: 0

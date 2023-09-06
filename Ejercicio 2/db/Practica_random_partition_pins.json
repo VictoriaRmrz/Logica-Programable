@@ -1,0 +1,49 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "output_gate[0]",
+					"strict" : false
+				},
+				{
+					"name" : "output_gate[1]",
+					"strict" : false
+				},
+				{
+					"name" : "output_gate[2]",
+					"strict" : false
+				},
+				{
+					"name" : "output_gate[3]",
+					"strict" : false
+				},
+				{
+					"name" : "output_gate[4]",
+					"strict" : false
+				},
+				{
+					"name" : "output_gate[5]",
+					"strict" : false
+				},
+				{
+					"name" : "output_gate[6]",
+					"strict" : false
+				},
+				{
+					"name" : "output_gate[7]",
+					"strict" : false
+				},
+				{
+					"name" : "input_a",
+					"strict" : false
+				},
+				{
+					"name" : "input_b",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

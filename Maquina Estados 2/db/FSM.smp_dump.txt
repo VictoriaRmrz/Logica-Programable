@@ -1,0 +1,9 @@
+
+State Machine - |wrapper|FSM_sequence:WRAPPER|current
+Name current.state3 current.state4 current.state1 current.state5 current.state2 current.state0 
+current.state0 0 0 0 0 0 0 
+current.state2 0 0 0 0 1 1 
+current.state5 0 0 0 1 0 1 
+current.state1 0 0 1 0 0 1 
+current.state4 0 1 0 0 0 1 
+current.state3 1 0 0 0 0 1 

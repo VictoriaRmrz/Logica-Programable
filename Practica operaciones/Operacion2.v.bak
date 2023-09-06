@@ -1,0 +1,23 @@
+module Operacion2(
+	input [3:0] x,
+	input clk,
+	output reg [7:0] resultado
+);
+
+reg [3:0] x_aux;
+reg x_2, x_3,x_4;
+
+always @(clk)
+begin
+	x_aux <= x;
+	x_2 <= x_aux * x_aux;
+	x_3 <= x_2 * x_aux;
+	x_4 <= x_3 * x_aux;
+	
+	x_3 <= x_3 << 1;
+	x_aux <= x_aux >> 3;
+	
+	resultado <= x_4 + x_3 + x_aux;
+	
+end
+endmodule

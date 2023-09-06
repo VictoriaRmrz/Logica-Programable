@@ -1,0 +1,25 @@
+module debouncer_tb();
+
+reg  p_b, 
+	  clk, 
+	  rst_a,
+wire p_b_debouncer
+
+debouncer DUT(
+	.p_b(p_b),
+	.clk(clk),
+	.rst_a(rst_a),
+	.p_b_debouncer(p_b_debouncer)
+);
+
+always begin
+	clk = 0;
+	rst_a = 0;
+	#5 rst = 1;
+	#10 rst = 0;
+	forever #10 clk = ~clk;
+end  
+
+
+
+endmodule

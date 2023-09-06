@@ -1,0 +1,77 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'MAX10_CLK1_50'
+Slack : -3.827
+TNS   : -53.014
+
+Type  : Slow 1200mV 85C Model Setup 'FSM_sequence:WRAPPER|clk_divider:CLOCK_DIVIDER|clk_div'
+Slack : 0.036
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'FSM_sequence:WRAPPER|clk_divider:CLOCK_DIVIDER|clk_div'
+Slack : 0.353
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'MAX10_CLK1_50'
+Slack : 0.549
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'MAX10_CLK1_50'
+Slack : -3.000
+TNS   : -43.326
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'FSM_sequence:WRAPPER|clk_divider:CLOCK_DIVIDER|clk_div'
+Slack : -1.222
+TNS   : -7.332
+
+Type  : Slow 1200mV 0C Model Setup 'MAX10_CLK1_50'
+Slack : -3.360
+TNS   : -44.868
+
+Type  : Slow 1200mV 0C Model Setup 'FSM_sequence:WRAPPER|clk_divider:CLOCK_DIVIDER|clk_div'
+Slack : 0.112
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'FSM_sequence:WRAPPER|clk_divider:CLOCK_DIVIDER|clk_div'
+Slack : 0.328
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'MAX10_CLK1_50'
+Slack : 0.504
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'MAX10_CLK1_50'
+Slack : -3.000
+TNS   : -43.326
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'FSM_sequence:WRAPPER|clk_divider:CLOCK_DIVIDER|clk_div'
+Slack : -1.222
+TNS   : -7.332
+
+Type  : Fast 1200mV 0C Model Setup 'MAX10_CLK1_50'
+Slack : -1.430
+TNS   : -10.591
+
+Type  : Fast 1200mV 0C Model Setup 'FSM_sequence:WRAPPER|clk_divider:CLOCK_DIVIDER|clk_div'
+Slack : 0.554
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'FSM_sequence:WRAPPER|clk_divider:CLOCK_DIVIDER|clk_div'
+Slack : 0.162
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'MAX10_CLK1_50'
+Slack : 0.248
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'MAX10_CLK1_50'
+Slack : -3.000
+TNS   : -41.610
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'FSM_sequence:WRAPPER|clk_divider:CLOCK_DIVIDER|clk_div'
+Slack : -1.000
+TNS   : -6.000
+
+------------------------------------------------------------

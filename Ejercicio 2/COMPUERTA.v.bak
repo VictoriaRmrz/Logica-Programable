@@ -1,0 +1,12 @@
+module COMPUERTA(
+	input input_a, input_b,
+	output reg output_gate
+);
+
+always @(*)
+begin
+	output_gate = input_a & input_b; //AND
+	
+end
+
+endmodule
